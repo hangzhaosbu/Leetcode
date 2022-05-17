@@ -1,10 +1,10 @@
 # Leetcode
 
 ### Tree
-:leaves: [1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)
+[1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)
 
 ### HashMap
-:leaves: [1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors)
+[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors)
 
 ### TreeMap
 [352. data-stream-as-disjoint-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/352-data-stream-as-disjoint-intervals) \
@@ -14,5 +14,5 @@
 ### Dynamic Programming
 [1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/Dynamic%20Programming/1770-maximum-score-from-performing-multiplication-operations)
 
-### 每日一题
+### 每日一题 :leaves: 
 5/16/2022 [1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)
