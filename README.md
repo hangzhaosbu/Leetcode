@@ -18,7 +18,8 @@
 
 * #### Number Tower
   :small_orange_diamond:[118. pascals-triangle](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/118-pascals-triangle) \
-  :small_orange_diamond:[119. pascals-triangle-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/119-pascals-triangle-ii)
+  :small_orange_diamond:[119. pascals-triangle-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/119-pascals-triangle-ii) \
+  :small_orange_diamond:[64. minimum-path-sum](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/64-minimum-path-sum)
 
 * #### Fibonacci Numbers
   * Fibonacci numbers \
