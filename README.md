@@ -12,6 +12,9 @@
 :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
 
 ### Dynamic Programming
+:small_orange_diamond:[70. climbing-stairs](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/70-climbing-stairs) \
+:small_orange_diamond:[746. min-cost-climbing-stairs](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/746-min-cost-climbing-stairs) \
+
 :small_orange_diamond:[198. house-robber](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/198-house-robber) \
 :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii) \
 :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
