@@ -24,7 +24,7 @@
 
   * House thief \
     :small_orange_diamond:[198. house-robber](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/198-house-robber) \
-    :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii) \
+    :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii)
     
 * #### Memory Search
   :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
