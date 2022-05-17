@@ -1,10 +1,7 @@
 class Solution {
     public int[] findBuildings(int[] heights) {
         int N = heights.length;
-        
         Stack<Integer> stack = new Stack<Integer>();
-        
-        
         
         for(int i = N - 1; i > -1; i--)
         {
