@@ -13,7 +13,7 @@
 
 ### Dynamic Programming
 :small_orange_diamond:[70. climbing-stairs](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/70-climbing-stairs) \
-:small_orange_diamond:[746. min-cost-climbing-stairs](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/746-min-cost-climbing-stairs) \
+:small_orange_diamond:[746. min-cost-climbing-stairs](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/746-min-cost-climbing-stairs) 
 
 :small_orange_diamond:[198. house-robber](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/198-house-robber) \
 :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii) \
