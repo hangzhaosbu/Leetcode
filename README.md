@@ -16,6 +16,9 @@
 
 ### Dynamic Programming
 
+* #### Number Tower
+  :small_orange_diamond:[118. pascals-triangle](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/118-pascals-triangle)
+
 * #### Fibonacci Numbers
   * Fibonacci numbers \
     :small_orange_diamond:[509. fibonacci-number](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/509-fibonacci-number) \
