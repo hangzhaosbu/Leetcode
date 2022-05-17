@@ -3,9 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/1770-maximum-score-from-performing-multiplication-operations" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Code_Every_Day/1570-dot-product-of-two-sparse-vectors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/CodeEveryDay/1570-dot-product-of-two-sparse-vectors" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TreeMap/2158-amount-of-new-area-painted-each-day" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TreeMap/2276-count-integers-in-intervals" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TreeMap/352-data-stream-as-disjoint-intervals" isTestSource="false" />
