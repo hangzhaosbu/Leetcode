@@ -40,4 +40,4 @@
 
 ### 每日一题 :leaves: 
 :calendar: 5/16/2022 :small_orange_diamond:[1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) \
-:calendar: 5/16/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/1192-critical-connections-in-a-network)
+:calendar: 5/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/1192-critical-connections-in-a-network)
