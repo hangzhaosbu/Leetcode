@@ -1,10 +1,11 @@
 # Leetcode
 
 ### Stack
-:small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1762-buildings-with-an-ocean-view)
+:small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
-:small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors)
+
+[//]: # (:small_orange_diamond:[1570. dot-product-of-two-sparse-vectors]&#40;https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors&#41;)
 
 ### Tree
 :small_orange_diamond:[1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree)
