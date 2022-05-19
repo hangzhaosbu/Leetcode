@@ -12,21 +12,6 @@ class Pair {
 class Solution {
     public int[] pathsWithMaxScore(List<String> board)
     {
-        /*
-        ["E11345",
-         "X452XX",
-         "3X43X4",
-         "44X312",
-         "23452X",
-         "1342XS"]
-
-          
-          
-          0, 1|1, 1|3, 1|
-          1, 1|0, 1|4, 1|
-          3, 1|4, 1|4, 1|
-        
-        */
         
         int N = board.size();
         Pair[][] dp = new Pair[N][N];
@@ -55,8 +40,6 @@ class Solution {
                     if(top == left && top == diagonal)
                     {
                         dp[i][j] = new Pair((top + curt) % MOD, ((i - 1 >= 0 && dp[i - 1][j] != null ? dp[i - 1][j].count : 0) + (j - 1 >= 0 && dp[i][j - 1] != null ? dp[i][j - 1].count : 0) + (i - 1 >= 0 && j - 1 >= 0 && dp[i - 1][j - 1] != null ? dp[i - 1][j - 1].count : 0)) % MOD);
-                        // System.out.println(i + ":" + j + " **" + dp[i][j].val + ", " + dp[i][j].count + "**");
-                        // System.out.println
                     }
                     else
                     {
@@ -95,10 +78,6 @@ class Solution {
                 }
             }
         }
-        
-        // for(Pair[] a : dp)
-        //     for(Pair b : a)
-        //         System.out.print(b.val + ", " + b.count + "|");
         
         
         if(dp[N - 1][N - 1].count == 0)
