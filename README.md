@@ -23,7 +23,8 @@
   :small_orange_diamond:[64. minimum-path-sum](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/64-minimum-path-sum) \
   :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/120-triangle) \
   :small_orange_diamond:[931. minimum-falling-path-sum](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/931-minimum-falling-path-sum) \
-  :small_orange_diamond:[1289. minimum-falling-path-sum-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1289-minimum-falling-path-sum-ii)
+  :small_orange_diamond:[1289. minimum-falling-path-sum-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1289-minimum-falling-path-sum-ii) \
+  :small_orange_diamond:[1301. number-of-paths-with-max-score](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1301-number-of-paths-with-max-score)
 
 * #### Fibonacci Numbers
   * Fibonacci numbers \
