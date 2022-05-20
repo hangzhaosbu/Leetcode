@@ -40,6 +40,7 @@
     :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii)
     
 * #### Memory Search
+  :small_orange_diamond:[139. word-break](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/139-word-break) \
   :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
 
 ### Code Everyday :leaves: 
