@@ -4,17 +4,17 @@ class Solution {
     {
         int N = s.length();
         
-        if(hashmap.containsKey(s))
-        {
-            return hashmap.get(s);
-        }
-        
         List<String> result = new ArrayList<String>();
         
         if(N == 0)
         {
             result.add("");
             return result;
+        }
+        
+        if(hashmap.containsKey(s))
+        {
+            return hashmap.get(s);
         }
         
         for(int i = 1; i < N + 1; ++i)
