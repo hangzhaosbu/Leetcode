@@ -14,7 +14,6 @@ class Solution {
         {
             if(hashset.contains(s.substring(index, i)))
             {
-                
                 StringBuilder temp = new StringBuilder(curt);
                 curt.append(" " + s.substring(index, i));
                 
