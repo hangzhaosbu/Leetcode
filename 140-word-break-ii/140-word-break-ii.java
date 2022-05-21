@@ -1,48 +1,47 @@
 class Solution {
     
-    private List<String> dfs(int index, String s, HashSet<String> hashset, HashMap<String, List<String>> hashmap)
+    private List<String> dfs(String s, HashSet<String> hashset, HashMap<String, List<String>> hashmap)
     {
         int N = s.length();
         
-        if(hashmap.containsKey(s.substring(index)))
+        if(hashmap.containsKey(s))
         {
-            return hashmap.get(s.substring(index));
+            return hashmap.get(s);
         }
         
         List<String> result = new ArrayList<String>();
         
-        if(index == N)
+        if(N == 0)
         {
             result.add("");
             return result;
         }
         
-        for(int i = index; i < N + 1; ++i)
+        for(int i = 1; i < N + 1; ++i)
         {
-            if(hashset.contains(s.substring(index, i)))
+            if(hashset.contains(s.substring(0, i)))
             {
-                List<String> future = dfs(i, s, hashset, hashmap);
+                List<String> future = dfs(s.substring(i), hashset, hashmap);
                 for(String c : future)
                 {
                     if(c.length() > 0)
                     {
-                        result.add(s.substring(index, i) + " " + c);
+                        result.add(s.substring(0, i) + " " + c);
                     }
                     else
                     {
-                        result.add(s.substring(index, i));
+                        result.add(s.substring(0, i));
                     }
                 }
             }
         }
         
-        hashmap.put(s.substring(index), result);
+        hashmap.put(s, result);
         return result;
     }
     
     public List<String> wordBreak(String s, List<String> wordDict)
     {
-        
-        return dfs(0, s, new HashSet<>(wordDict), new HashMap<>());
+        return dfs(s, new HashSet<>(wordDict), new HashMap<>());
     }
 }
