@@ -24,14 +24,7 @@ class Solution {
                 List<String> future = dfs(s.substring(i), hashset, hashmap);
                 for(String c : future)
                 {
-                    if(c.length() > 0)
-                    {
-                        result.add(s.substring(0, i) + " " + c);
-                    }
-                    else
-                    {
-                        result.add(s.substring(0, i));
-                    }
+                    result.add(s.substring(0, i) + (c.isEmpty() ? "" : " " + c));
                 }
             }
         }
