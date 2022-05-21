@@ -12,11 +12,6 @@ class Solution {
         {
             for(int j = 0; j < M + 1; ++j)
             {
-                if(i == 0 && j == 0)
-                {
-                    continue;
-                }
-                
                 if(i >= 1)
                     dp[i][j] = dp[i - 1][j];
                 if(j >= coins[i])
