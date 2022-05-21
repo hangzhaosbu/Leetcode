@@ -41,6 +41,7 @@
     
 * #### Memory Search
   :small_orange_diamond:[139. word-break](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/139-word-break) \
+  :small_orange_diamond:[140. word-break-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/140-word-break-ii) \
   :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
 
 ### Code Everyday :leaves: 
