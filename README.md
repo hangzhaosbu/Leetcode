@@ -50,4 +50,5 @@
 :calendar: 5/18/2022 :small_orange_diamond:[329. longest-increasing-path-in-a-matrix](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/329-longest-increasing-path-in-a-matrix) \
 :calendar: 5/19/2022 :small_orange_diamond:[63. unique-paths-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/63-unique-paths-ii) \
 :calendar: 5/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
-:calendar: 5/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings)
+:calendar: 5/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
+                     :star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity)
