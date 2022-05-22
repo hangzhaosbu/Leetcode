@@ -4,8 +4,6 @@ class Solution {
         
         int[] pdp = new int[N + 1];
         int[] ndp = new int[N + 1];
-        Arrays.fill(pdp, Integer.MIN_VALUE);
-        Arrays.fill(ndp, Integer.MAX_VALUE);
         
         pdp[0] = 1;
         ndp[0] = 1;
