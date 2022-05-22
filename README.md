@@ -38,7 +38,7 @@
   * House thief \
     :small_orange_diamond:[198. house-robber](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/198-house-robber) \
     :small_orange_diamond:[213. house-robber-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/213-house-robber-ii)
-    
+
 * #### Memory Search
   :small_orange_diamond:[139. word-break](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/139-word-break) \
   :small_orange_diamond:[140. word-break-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/140-word-break-ii) \
@@ -49,4 +49,5 @@
 :calendar: 5/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1192-critical-connections-in-a-network) \
 :calendar: 5/18/2022 :small_orange_diamond:[329. longest-increasing-path-in-a-matrix](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/329-longest-increasing-path-in-a-matrix) \
 :calendar: 5/19/2022 :small_orange_diamond:[63. unique-paths-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/63-unique-paths-ii) \
-:calendar: 5/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change)
+:calendar: 5/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
+:calendar: 5/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings)
