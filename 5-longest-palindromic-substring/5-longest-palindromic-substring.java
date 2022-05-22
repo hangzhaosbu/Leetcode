@@ -5,20 +5,17 @@ class Solution {
         
         boolean[][] dp = new boolean[N][N];
         
-        for(int i = 0; i < N; i++)
-        {
-            dp[i][i] = true;
-            
-            if(i + 1 < N && s.charAt(i) == s.charAt(i + 1))
-            {
-                dp[i][i + 1] = true;
-            }
-        }
-        
         for(int len = 1; len <= N; len++)
         {
             for(int i = 0; i + len - 1 < N; i++)
             {
+                dp[i][i] = true;
+                
+                if(i + 1 < N && s.charAt(i) == s.charAt(i + 1))
+                {
+                    dp[i][i + 1] = true;
+                }
+                
                 int j = i + len - 1;
                 
                 if(i + 1 <= j - 1 && s.charAt(i) == s.charAt(j))
