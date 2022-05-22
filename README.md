@@ -44,9 +44,19 @@
   :small_orange_diamond:[140. word-break-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/140-word-break-ii) \
   :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
 
+* #### Counting DP
+  :small_orange_diamond:[91. decode-ways](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/91-decode-ways)
+
 * #### Subsequence/Substring
+  * Longest Subsequence/Substring \
+    :small_orange_diamond:[300. longest-increasing-subsequence](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/300-longest-increasing-subsequence)
+  
   * Palindromic Subsequence/Substring \
     :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring) 
+
+* #### Others
+  :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
+
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
