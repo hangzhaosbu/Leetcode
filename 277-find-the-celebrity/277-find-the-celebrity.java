@@ -28,17 +28,10 @@ public class Solution extends Relation {
             }
         }
         
-        if(hashset.size() != 1)
+        if(hashset.size() != 1 || hashmap.get(hashset.iterator().next()) != n - 1)
         {
             return -1;
         }
-        
-        int c = hashset.iterator().next();
-        
-        if(hashmap.get(c) != n - 1)
-        {
-            return -1;
-        }
-        return c;
+        return hashset.iterator().next();
     }
 }
