@@ -45,10 +45,10 @@
   :small_orange_diamond:[1770. maximum-score-from-performing-multiplication-operations](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1770-maximum-score-from-performing-multiplication-operations)
 
 ### Code Everyday :leaves: 
-:calendar: 5/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
-:calendar: 5/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1192-critical-connections-in-a-network) \
-:calendar: 5/18/2022 :small_orange_diamond:[329. longest-increasing-path-in-a-matrix](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/329-longest-increasing-path-in-a-matrix) \
-:calendar: 5/19/2022 :small_orange_diamond:[63. unique-paths-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/63-unique-paths-ii) \
-:calendar: 5/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
-:calendar: 5/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
+:calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
+:calendar: 05/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1192-critical-connections-in-a-network) \
+:calendar: 05/18/2022 :small_orange_diamond:[329. longest-increasing-path-in-a-matrix](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/329-longest-increasing-path-in-a-matrix) \
+:calendar: 05/19/2022 :small_orange_diamond:[63. unique-paths-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/63-unique-paths-ii) \
+:calendar: 05/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
+:calendar: 05/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity)
