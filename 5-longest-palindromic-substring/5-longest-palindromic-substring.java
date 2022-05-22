@@ -1,36 +1,39 @@
 class Solution {
-    
-    int start = 0, end = 0, max_len = 0;
-    
-    private void help(int left, int right, int N, String s)
-    {
-        if(left < 0 || right > N - 1)
-        {
-            return;
-        }
-        
-        while(left > -1 && right < N && s.charAt(left) == s.charAt(right))
-        {
-            left--;
-            right++;
-        }
-        
-        if(right - 1 - (left + 1) > max_len)
-        {
-            max_len = right - 1 - (left + 1);
-            start = left + 1;
-            end = right - 1;
-        }
-    }
-    
-    public String longestPalindrome(String s)
-    {
+    public String longestPalindrome(String s) {
         int N = s.length();
+        int start = 0, end = 0, max_len = 0;
         
-        for(int i = 0; i < N; ++i)
+        boolean[][] dp = new boolean[N][N];
+        
+        for(int i = 0; i < N; i++)
         {
-            help(i, i, N, s);
-            help(i, i + 1, N, s);
+            dp[i][i] = true;
+            
+            if(i + 1 < N && s.charAt(i) == s.charAt(i + 1))
+            {
+                dp[i][i + 1] = true;
+            }
+        }
+        
+        for(int len = 1; len <= N; len++)
+        {
+            for(int i = 0; i + len - 1 < N; i++)
+            {
+                int j = i + len - 1;
+                
+                if(i + 1 <= j - 1 && s.charAt(i) == s.charAt(j))
+                {
+                    dp[i][j] = dp[i + 1][j - 1];
+                }
+                
+                
+                if(dp[i][j] && j - i + 1 > max_len)
+                {
+                    max_len = j - i + 1;
+                    start = i;
+                    end = j;
+                }
+            }
         }
         
         return s.substring(start, end + 1);
