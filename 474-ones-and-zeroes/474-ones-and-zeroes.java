@@ -31,7 +31,7 @@ class Solution {
             return dp[m][n][start];
         }
         
-        int taken = 0;
+        int taken = -1;
         
         if(m >= count[start][0] && n >= count[start][1])
         {
