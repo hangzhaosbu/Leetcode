@@ -39,20 +39,16 @@ class Solution {
     
     public boolean canPartition(int[] nums)
     {
-        int sum = 0;
-        int N = nums.length;
+        int N = nums.length, sum = 0;
         dp = new int[N + 1][N * 100 + 1];
-        
         Arrays.stream(dp).forEach(a->Arrays.fill(a, -1));
-        // Arrays.fill(dp, -1);
         
         for(int num : nums)
         {
             sum += num;
         }
+        
         dfs(0, 0, sum, nums);
-        
-        
         return result;
     }
 }
