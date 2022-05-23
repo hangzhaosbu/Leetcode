@@ -65,4 +65,5 @@
 :calendar: 05/19/2022 :small_orange_diamond:[63. unique-paths-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/63-unique-paths-ii) \
 :calendar: 05/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
 :calendar: 05/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity) \
+:calendar: 05/22/2022 :small_orange_diamond:[474. ones-and-zeroes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/474-ones-and-zeroes)
