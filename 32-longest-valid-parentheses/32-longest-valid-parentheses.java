@@ -12,15 +12,7 @@ class Solution {
                 int left = stack.peek();
                 stack.pop();
                 
-                if(!stack.empty())
-                {
-                    left = Math.min(left, stack.peek());
-                }
-                else
-                {
-                    left = -1;
-                }
-                
+                left = stack.empty() ? -1 : Math.min(left, stack.peek());
                 count = Math.max(count, right - left);
             }
             else
