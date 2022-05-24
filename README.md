@@ -1,6 +1,7 @@
 # Leetcode
 
 ### Stack
+:small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/Stack/32-longest-valid-parentheses) \
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
