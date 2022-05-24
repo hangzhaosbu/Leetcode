@@ -40,14 +40,19 @@ class Solution {
     public boolean canPartition(int[] nums)
     {
         int N = nums.length, sum = 0;
-        dp = new int[N + 1][N * 100 + 1];
-        Arrays.stream(dp).forEach(a->Arrays.fill(a, -1));
         
         for(int num : nums)
         {
             sum += num;
         }
         
+        if(sum % 2 == 1)
+        {
+            return false;
+        }
+        
+        dp = new int[N + 1][N * 100 + 1];
+        Arrays.stream(dp).forEach(a->Arrays.fill(a, -1));
         dfs(0, 0, sum, nums);
         return result;
     }
