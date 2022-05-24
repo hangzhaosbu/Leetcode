@@ -18,7 +18,7 @@ class Solution {
                 }
                 else
                 {
-                    left = Math.min(-1, left);
+                    left = -1;
                 }
                 
                 count = Math.max(count, right - left);
