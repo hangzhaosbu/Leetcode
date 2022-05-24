@@ -1,7 +1,6 @@
 # Leetcode
 
 ### Stack
-:small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/Stack/32-longest-valid-parentheses) \
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
@@ -67,4 +66,5 @@
 :calendar: 05/20/2022 :small_orange_diamond:[322. coin-change](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/322-coin-change) \
 :calendar: 05/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity) \
-:calendar: 05/22/2022 :small_orange_diamond:[474. ones-and-zeroes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/474-ones-and-zeroes)
+:calendar: 05/22/2022 :small_orange_diamond:[474. ones-and-zeroes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/474-ones-and-zeroes) \
+:calendar: 05/23/2022 :small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/32-longest-valid-parentheses)
