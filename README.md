@@ -69,4 +69,5 @@
 :calendar: 05/21/2022 :small_orange_diamond:[647. palindromic-substrings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/647-palindromic-substrings) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity) \
 :calendar: 05/22/2022 :small_orange_diamond:[474. ones-and-zeroes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/474-ones-and-zeroes) \
-:calendar: 05/23/2022 :small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/32-longest-valid-parentheses)
+:calendar: 05/23/2022 :small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/32-longest-valid-parentheses) \
+:calendar: 05/24/2022 :small_orange_diamond:[354. russian-doll-envelopes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/354-russian-doll-envelopes)
