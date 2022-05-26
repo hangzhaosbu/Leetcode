@@ -2,10 +2,8 @@ class Solution {
     
     public boolean isValidSudoku(char[][] board)
     {
-        int M = board.length, N = board[0].length, cell = 0, row = 0, col = 0;
-        HashMap<Integer, HashSet<Character>> rows = new HashMap<>();
-        HashMap<Integer, HashSet<Character>> columns = new HashMap<>();
-        HashMap<Integer, HashSet<Character>> cells = new HashMap<>();
+        int cell = 0;
+        HashMap<Integer, HashSet<Character>> rows = new HashMap<>(), columns = new HashMap<>(), cells = new HashMap<>();
         
         for(int i = 0; i < 9; ++i)
         {
@@ -22,36 +20,16 @@ class Solution {
                 {
                     if(board[i][j] != '.')
                     {
-                        if(!cells.get(cell).contains(board[i][j]))
-                        {
-                            cells.get(cell).add(board[i][j]);
-                        }
-                        else
+                        if(cells.get(cell).contains(board[i][j]) || columns.get(j).contains(board[i][j]) || rows.get(i).contains(board[i][j]))
                         {
                             return false;
                         }
-                        
-                        if(!columns.get(j).contains(board[i][j]))
-                        {
-                            columns.get(j).add(board[i][j]);
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                        
-                        if(!rows.get(i).contains(board[i][j]))
-                        {
-                            rows.get(i).add(board[i][j]);
-                        }
-                        else
-                        {
-                            return false;
-                        }
+                        cells.get(cell).add(board[i][j]);
+                        columns.get(j).add(board[i][j]);
+                        rows.get(i).add(board[i][j]);
                     }
                 }
             }
-            
             cell++;
         }
         
