@@ -4,8 +4,7 @@
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
-
-[//]: # (:small_orange_diamond:[1570. dot-product-of-two-sparse-vectors]&#40;https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors&#41;)
+:small_orange_diamond:[36. valid-sudoku](https://github.com/Frannky/Leetcode/tree/master/HashMap/36-valid-sudoku)
 
 ### Tree
 :small_orange_diamond:[1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) \
@@ -16,8 +15,10 @@
 :small_orange_diamond:[2158. amount-of-new-area-painted-each-day](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2158-amount-of-new-area-painted-each-day) \
 :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
 
-### Dynamic Programming
+### Backtracking
+:small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver) 
 
+### Dynamic Programming
 * #### Number Tower
   :small_orange_diamond:[118. pascals-triangle](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/118-pascals-triangle) \
   :small_orange_diamond:[119. pascals-triangle-ii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/119-pascals-triangle-ii) \
@@ -59,9 +60,6 @@
 * #### Others
   :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
 
-### Bit Manipulation
-  :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/191-number-of-1-bits)
-
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
 :calendar: 05/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1192-critical-connections-in-a-network) \
@@ -72,4 +70,5 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[277. find-the-celebrity](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/277-find-the-celebrity) \
 :calendar: 05/22/2022 :small_orange_diamond:[474. ones-and-zeroes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/474-ones-and-zeroes) \
 :calendar: 05/23/2022 :small_orange_diamond:[32. longest-valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/32-longest-valid-parentheses) \
-:calendar: 05/24/2022 :small_orange_diamond:[354. russian-doll-envelopes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/354-russian-doll-envelopes)
+:calendar: 05/24/2022 :small_orange_diamond:[354. russian-doll-envelopes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/354-russian-doll-envelopes) \
+:calendar: 05/25/2022 :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/191-number-of-1-bits)
