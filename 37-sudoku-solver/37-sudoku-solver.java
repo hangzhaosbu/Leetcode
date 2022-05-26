@@ -44,7 +44,6 @@ class Solution {
             return;
         }
         
-        // System.out.println(i + ", " + j);
         if(board[i][j] != '.')
         {
             dfs(i + 1, j, M, N, rows, columns, cells, board);
