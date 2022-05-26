@@ -1,79 +1,7 @@
 class Solution {
     
-    boolean result = false;
-    
-    private boolean valid(HashMap<Integer, HashSet<Character>> rows, HashMap<Integer, HashSet<Character>> columns, HashMap<Integer, HashSet<Character>> cells)
-    {
-        for(int i = 0; i < 9; i++)
-        {
-            if(rows.get(i).size() != 9 || columns.get(i).size() != 9 || cells.get(i).size() != 9)
-            {
-                return false;
-            }
-        }
-        
-        return true;
-    }
-    
-    private void dfs(int i, int j, int M, int N, HashMap<Integer, HashSet<Character>> rows, HashMap<Integer, HashSet<Character>> columns, HashMap<Integer, HashSet<Character>> cells, char[][] board)
-    {
-        if(i == 0 && j == N)
-        {
-            if(valid(rows, columns, cells))
-            {
-                result = true;
-                return;
-            }
-            else
-            {
-                return;
-            }
-        }
-        
-        if(i == M)
-        {
-            dfs(0, j + 1, M, N, rows, columns, cells, board);
-            return;
-        }
-        
-        // System.out.println(i + ", " + j);
-        if(board[i][j] != '.')
-        {
-            dfs(i + 1, j, M, N, rows, columns, cells, board);
-            return;
-        }
-        
-        for(char k = '1'; k <= '9'; ++k)
-        {
-            if(!rows.get(i).contains(k) && !columns.get(j).contains(k) && !cells.get(i/3 * 3 + j/3).contains(k))
-            {
-                rows.get(i).add(k);
-                columns.get(j).add(k);
-                cells.get(i/3 * 3 + j/3).add(k);
-                
-                dfs(i + 1, j, M, N, rows, columns, cells, board);
-                
-                rows.get(i).remove(k);
-                columns.get(j).remove(k);
-                cells.get(i/3 * 3 + j/3).remove(k);
-            }
-        }
-    }
-    
     public boolean isValidSudoku(char[][] board)
     {
-        
-        /*
-        [[".","8","7","6","5","4","3","2","1"],
-         ["2",".",".",".",".",".",".",".","."],
-         ["3",".",".",".",".",".",".",".","."],
-         ["4",".",".",".",".",".",".",".","."],
-         ["5",".",".",".",".",".",".",".","."],
-         ["6",".",".",".",".",".",".",".","."],
-         ["7",".",".",".",".",".",".",".","."],
-         ["8",".",".",".",".",".",".",".","."],
-         ["9",".",".",".",".",".",".",".","."]]
-        */
         int M = board.length, N = board[0].length, cell = 0, row = 0, col = 0;
         HashMap<Integer, HashSet<Character>> rows = new HashMap<>();
         HashMap<Integer, HashSet<Character>> columns = new HashMap<>();
@@ -127,17 +55,6 @@ class Solution {
             cell++;
         }
         
-        
-//         for(int i = 0; i < 9; i++)
-//         {
-//             if(rows.get(i).size() == 0 && columns.get(i).size() == 0 && cells.get(i).size() == 0)
-//             {
-//                 return true;
-//             }
-//         }
-        
-        
-//         dfs(0, 0, M, N, rows, columns, cells, board);
         return true;
     }
 }
