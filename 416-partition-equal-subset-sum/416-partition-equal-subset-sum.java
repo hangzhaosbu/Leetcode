@@ -16,9 +16,9 @@ class Solution {
             
             boolean[] new_dp = dp.clone();
             
-            for(int i = num; i <= sum/2; i++)
+            for(int i = sum/2; i >= num; --i)
             {
-                if(new_dp[i - num])
+                if(dp[i - num])
                 {
                     dp[i] = true;
                 }
