@@ -59,6 +59,8 @@
 * #### Others
   :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
 
+### Bit Manipulation
+  :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/191-number-of-1-bits)
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
