@@ -1,59 +1,26 @@
 class Solution {
-    
-    boolean result = false;
-    int[][] dp;
-    
-    private int dfs(int start, int running_sum, int sum, int[] nums)
-    {
-        if(dp[start][running_sum] != -1)
-        {
-            return dp[start][running_sum];
-        }
+    public boolean canPartition(int[] nums) {
+        int sum = Arrays.stream(nums).sum();
         
-        int N = nums.length;
-        
-        if(start == N)
-        {
-            return 0;
-        }
-        if(running_sum == sum - running_sum)
-        {
-            result = true;
-            dp[start][running_sum] = 1;
-            return 1;
-        }
-        
-        int r = 0;
-        for(int i = start; i < N; ++i)
-        {
-            if(dfs(i + 1, running_sum + nums[i], sum, nums) == 1)
-            {
-                r = 1;
-                break;
-            }
-        }
-        
-        dp[start][running_sum] = r;
-        return r;
-    }
-    
-    public boolean canPartition(int[] nums)
-    {
-        int N = nums.length, sum = 0;
-        
-        for(int num : nums)
-        {
-            sum += num;
-        }
-        
-        if(sum % 2 == 1)
+        if((sum & 1) == 1)
         {
             return false;
         }
         
-        dp = new int[N + 1][N * 100 + 1];
-        Arrays.stream(dp).forEach(a->Arrays.fill(a, -1));
-        dfs(0, 0, sum, nums);
-        return result;
+        boolean[] dp = new boolean[sum/2 + 1];
+        dp[0] = true;
+        
+        for(int num : nums)
+        {
+            for(int i = sum/2; i >= num; --i)
+            {
+                if(dp[i - num])
+                {
+                    dp[i] = true;
+                }
+            }
+        }
+        
+        return dp[sum/2];
     }
 }
