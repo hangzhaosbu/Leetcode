@@ -14,7 +14,7 @@ class Solution {
         for(int num : nums)
         {
             
-            boolean[] new_dp = Arrays.copyOf(dp, sum/2+1);
+            boolean[] new_dp = dp.clone();
             
             for(int i = num; i <= sum/2; i++)
             {
