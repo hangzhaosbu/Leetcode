@@ -79,4 +79,5 @@
 :calendar: 05/24/2022 :small_orange_diamond:[354. russian-doll-envelopes](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/354-russian-doll-envelopes) \
 :calendar: 05/25/2022 :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/191-number-of-1-bits) \
 :calendar: 05/26/2022 :small_orange_diamond:[1342. number-of-steps-to-reduce-a-number-to-zero](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1342-number-of-steps-to-reduce-a-number-to-zero) \
-:calendar: 05/27/2022 :small_orange_diamond:[268. missing-number](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/268-missing-number)
+:calendar: 05/27/2022 :small_orange_diamond:[268. missing-number](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/268-missing-number) \
+:calendar: 05/28/2022 :small_orange_diamond:[318. maximum-product-of-word-lengths](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/318-maximum-product-of-word-lengths)
