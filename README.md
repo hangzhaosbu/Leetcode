@@ -85,7 +85,7 @@
 :calendar: 05/29/2022 :small_orange_diamond:[29. divide-two-integers](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/29-divide-two-integers) \
 :calendar: 05/30/2022 :small_orange_diamond:[1461. check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1461-check-if-a-string-contains-all-binary-codes-of-size-k) \
 :calendar: 05/31/2022 :small_orange_diamond:[1480. running-sum-of-1d-array](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1480-running-sum-of-1d-array) \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1136. parallel-courses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1136. parallel-courses) \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1136. parallel-courses](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1136-parallel-courses) \
 :calendar: 06/01/2022 :small_orange_diamond:[867. transpose-matrix](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/867-transpose-matrix) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1197. minimum-knight-moves](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1197-minimum-knight-moves) \
 :calendar: 06/02/2022 :small_orange_diamond:[304. range-sum-query-2d-immutable](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/304-range-sum-query-2d-immutable)
