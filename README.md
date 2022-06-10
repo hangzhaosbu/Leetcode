@@ -91,5 +91,12 @@
 :calendar: 06/02/2022 :small_orange_diamond:[304. range-sum-query-2d-immutable](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/304-range-sum-query-2d-immutable) \
 :calendar: 06/03/2022 :small_orange_diamond:[51. n-queens](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/51-n-queens) \
 :calendar: 06/04/2022 :small_orange_diamond:[52. n-queens-ii](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/52-n-queens-ii) \
-:calendar: 06/05/2022 :small_orange_diamond:[160. intersection-of-two-linked-lists](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/160-intersection-of-two-linked-lists)
+:calendar: 06/05/2022 :small_orange_diamond:[160. intersection-of-two-linked-lists](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/160-intersection-of-two-linked-lists) \
+:calendar: 06/06/2022 :small_orange_diamond:[88. merge-sorted-array](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/88-merge-sorted-array) \
+:calendar: 06/07/2022 :small_orange_diamond:[1332. remove-palindromic-subsequences](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1332-remove-palindromic-subsequences) \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1151. minimum-swaps-to-group-all-1s-together](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1151-minimum-swaps-to-group-all-1s-together) \
+:calendar: 06/08/2022 :small_orange_diamond:[167. two-sum-ii-input-array-is-sorted](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/167-two-sum-ii-input-array-is-sorted) \
+:calendar: 06/09/2022 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/3-longest-substring-without-repeating-characters)
+
+
 
