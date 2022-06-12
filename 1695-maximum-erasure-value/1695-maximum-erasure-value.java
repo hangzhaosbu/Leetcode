@@ -13,10 +13,7 @@ class Solution {
                 curt += nums[j + 1];
                 j ++;
             }
-            
-            
             result = Math.max(result, curt);
-            
             hashset.remove(nums[i]);
             curt -= nums[i];
         }
