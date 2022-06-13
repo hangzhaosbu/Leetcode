@@ -1,6 +1,8 @@
 # Leetcode
 
 ### Arrays
+:small_orange_diamond:[1. two-sum](https://github.com/Frannky/Leetcode/tree/master/Arrays/1-two-sum) \
+:small_orange_diamond:[49. group-anagrams](https://github.com/Frannky/Leetcode/tree/master/Arrays/49-group-anagrams) \
 :small_orange_diamond:[217. contains-duplicate](https://github.com/Frannky/Leetcode/tree/master/Arrays/217-contains-duplicate) \
 :small_orange_diamond:[242. valid-anagram](https://github.com/Frannky/Leetcode/tree/master/Arrays/242-valid-anagram)
 
