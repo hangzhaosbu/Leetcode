@@ -1,5 +1,8 @@
 # Leetcode
 
+### Arrays
+:small_orange_diamond:[217. contains-duplicate](https://github.com/Frannky/Leetcode/tree/master/Arrays/217-contains-duplicate)
+
 ### Stack
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
@@ -96,7 +99,10 @@
 :calendar: 06/07/2022 :small_orange_diamond:[1332. remove-palindromic-subsequences](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1332-remove-palindromic-subsequences) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1151. minimum-swaps-to-group-all-1s-together](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1151-minimum-swaps-to-group-all-1s-together) \
 :calendar: 06/08/2022 :small_orange_diamond:[167. two-sum-ii-input-array-is-sorted](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/167-two-sum-ii-input-array-is-sorted) \
-:calendar: 06/09/2022 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/3-longest-substring-without-repeating-characters)
+:calendar: 06/09/2022 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/3-longest-substring-without-repeating-characters) \
+:calendar: 06/10/2022 :small_orange_diamond:[1658. minimum-operations-to-reduce-x-to-zero](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1658-minimum-operations-to-reduce-x-to-zero) \
+:calendar: 06/11/2022 :small_orange_diamond:[1695. maximum-erasure-value](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1695-maximum-erasure-value) \
+:calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle)
 
 
 
