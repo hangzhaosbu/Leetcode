@@ -1,62 +1,38 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        HashSet<List<Integer>> hashset = new HashSet<>();
-        
-        if(nums.length < 3)
-        {
-            return new ArrayList<>(hashset);
-        }
+        List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
         int N = nums.length;
         int i = 0;
         
         while(i < N && nums[i] <= 0)
         {
-            if(i > 0 && nums[i] == nums[i - 1])
+            if(i == 0 || nums[i] != nums[i - 1])
             {
-                i++;    
-            }
-            
-            if(i < N && nums[i] <= 0)
-            {
-                int target = 0 - nums[i];
                 int left = i + 1, right = N - 1;
                 while(left < right)
                 {
-                    List<Integer> curt = new ArrayList<>();
-
-                    if(nums[left] + nums[right] > target)
+                    int sum = nums[i] + nums[left] + nums[right];
+                    if(sum > 0)
                     {
                         right--;
                     }
-                    else if(nums[left] + nums[right] < target)
+                    else if(sum < 0)
                     {
                         left++;
                     }
                     else
                     {
-                        curt.add(nums[i]);
-                        curt.add(nums[left]);
-                        curt.add(nums[right]);
-                        if(!hashset.contains(curt))
+                        result.add(Arrays.asList(nums[i], nums[left++], nums[right--]));
+                        while(left < right && nums[left] == nums[left - 1])
                         {
-                            hashset.add(curt);
+                            left++;
                         }
-                            
-                        left++;
-                        right--;
-                    }
-                    
-                    if(left >= right)
-                    {
-                        break;
                     }
                 }
             }
-            
             i++;
         }
-        
-        return new ArrayList<>(hashset);
+        return result;
     }
 }
