@@ -7,7 +7,7 @@ class Solution {
         {
             result = Math.max(result, (right - left) * Math.min(height[left], height[right]));
             
-            if(height[left] <= height[right])
+            if(height[left] < height[right] + 1)
             {
                 left++;
             }
