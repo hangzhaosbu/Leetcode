@@ -31,6 +31,9 @@
 ### Backtracking
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
 
+### UnionFind
+:small_orange_diamond:[128. longest-consecutive-sequence](https://github.com/Frannky/Leetcode/tree/master/UnionFind/128-longest-consecutive-sequence)
+
 ### QuickSelect
 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/215-kth-largest-element-in-an-array) \
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/347-top-k-frequent-elements)
