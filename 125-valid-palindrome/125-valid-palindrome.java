@@ -6,13 +6,13 @@ class Solution {
         
         while(left <= right)
         {
-            while(left <= right && !((s.charAt(left) >= 'a' && s.charAt(left) <= 'z') || (s.charAt(left) >= '0' && s.charAt(left) <= '9')))
+            while(left <= right && !Character.isLetterOrDigit(s.charAt(left)))
             {
                 left++;
             }
             
             
-            while(left <= right && !((s.charAt(right) >= 'a' && s.charAt(right) <= 'z') || (s.charAt(right) >= '0' && s.charAt(right) <= '9')))
+            while(left <= right && !Character.isLetterOrDigit(s.charAt(right)))
             {
                 right--;
             }
