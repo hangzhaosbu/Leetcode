@@ -49,21 +49,6 @@ class Solution {
     
     public int[] topKFrequent(int[] nums, int k)
     {
-        /*
-        S S S S S S S O O O L L L L
-        l             i   j       r
-        
-        
-        [1,1,1,2,2,3]
-        2
-        [1]
-        1
-        [4,1,-1,2,-1,2,3]
-        2
-        [1,2]
-        2
-        
-        */
         HashMap<Integer, Integer> hashmap = new HashMap<>();
         HashMap<Integer, List<Integer>> frequency = new HashMap<>();
         for(int num : nums)
