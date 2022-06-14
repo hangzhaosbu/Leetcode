@@ -26,7 +26,10 @@
 :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
 
 ### Backtracking
-:small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver) 
+:small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
+
+### QuickSelect
+:small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/215-kth-largest-element-in-an-array)
 
 ### Dynamic Programming
 * #### Number Tower
