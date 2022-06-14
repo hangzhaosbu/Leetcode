@@ -21,21 +21,19 @@ class Solution {
             {
                 int target = 0 - nums[i];
                 int left = i + 1, right = N - 1;
-
-
                 while(left < right)
                 {
                     List<Integer> curt = new ArrayList<>();
 
-                    if(left < right && nums[left] + nums[right] > target)
+                    if(nums[left] + nums[right] > target)
                     {
                         right--;
                     }
-                    else if(left < right && nums[left] + nums[right] < target)
+                    else if(nums[left] + nums[right] < target)
                     {
                         left++;
                     }
-                    else if(left < right && nums[left] + nums[right] == target)
+                    else
                     {
                         curt.add(nums[i]);
                         curt.add(nums[left]);
@@ -47,6 +45,11 @@ class Solution {
                             
                         left++;
                         right--;
+                    }
+                    
+                    if(left >= right)
+                    {
+                        break;
                     }
                 }
             }
