@@ -29,7 +29,8 @@
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
 
 ### QuickSelect
-:small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/215-kth-largest-element-in-an-array)
+:small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/215-kth-largest-element-in-an-array) \
+:small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/347-top-k-frequent-elements)
 
 ### Dynamic Programming
 * #### Number Tower
@@ -109,7 +110,8 @@
 :calendar: 06/09/2022 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/3-longest-substring-without-repeating-characters) \
 :calendar: 06/10/2022 :small_orange_diamond:[1658. minimum-operations-to-reduce-x-to-zero](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1658-minimum-operations-to-reduce-x-to-zero) \
 :calendar: 06/11/2022 :small_orange_diamond:[1695. maximum-erasure-value](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1695-maximum-erasure-value) \
-:calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle)
+:calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle) \
+:calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings)
 
 
 
