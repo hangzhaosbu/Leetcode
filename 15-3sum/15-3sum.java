@@ -11,7 +11,12 @@ class Solution {
         int i = 0;
         
         while(i < N)
-        {   
+        {
+            if(i > 0 && nums[i] == nums[i - 1])
+            {
+                i++;    
+            }
+            
             if(i < N)
             {
                 int target = 0 - nums[i];
