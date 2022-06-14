@@ -1,23 +1,17 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
         HashSet<List<Integer>> hashset = new HashSet<>();
         
         if(nums.length < 3)
         {
-            return result;
+            return new ArrayList<>(hashset);
         }
         Arrays.sort(nums);
         int N = nums.length;
         int i = 0;
         
         while(i < N)
-        {
-            if(i > 0 && nums[i] == nums[i - 1])
-            {
-                i++;    
-            }
-            
+        {   
             if(i < N)
             {
                 int target = 0 - nums[i];
@@ -44,7 +38,6 @@ class Solution {
                         if(!hashset.contains(curt))
                         {
                             hashset.add(curt);
-                            result.add(curt);
                         }
                             
                         left++;
@@ -56,6 +49,6 @@ class Solution {
             i++;
         }
         
-        return result;
+        return new ArrayList<>(hashset);
     }
 }
