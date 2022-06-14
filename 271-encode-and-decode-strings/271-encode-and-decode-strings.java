@@ -17,10 +17,11 @@ public class Codec
         List<String> result = new ArrayList<>();
         int N = s.length();
         int i = 0;
+        int j = 0;
         
         while(i < N)
         {
-            int j = i;
+            j = i;
             
             while(s.charAt(j) != '#')
             {
