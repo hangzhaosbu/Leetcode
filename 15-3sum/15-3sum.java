@@ -1,28 +1,62 @@
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> res = new ArrayList<>();
-        for (int i = 0; i < nums.length && nums[i] <= 0; ++i) {
-            if (i == 0 || nums[i - 1] != nums[i]) {
-                twoSum(nums, i, res);
-            }
+        HashSet<List<Integer>> hashset = new HashSet<>();
+        
+        if(nums.length < 3)
+        {
+            return new ArrayList<>(hashset);
         }
-        return res;
-    }
-    void twoSum(int[] nums, int i, List<List<Integer>> res) {
-        int l = i + 1, h = nums.length - 1;
-        while (l < h) {
-            int sum = nums[i] + nums[l] + nums[h];
-            if (sum < 0) {
-                ++l;
-            } else if (sum > 0) {
-                --h;
-            } else {
-                res.add(Arrays.asList(nums[i], nums[l++], nums[h--]));
-                while (l < h && nums[l] == nums[l - 1]) {
-                    ++l;
+        Arrays.sort(nums);
+        int N = nums.length;
+        int i = 0;
+        
+        while(i < N && nums[i] <= 0)
+        {
+            if(i > 0 && nums[i] == nums[i - 1])
+            {
+                i++;    
+            }
+            
+            if(i < N)
+            {
+                int target = 0 - nums[i];
+                int left = i + 1, right = N - 1;
+                while(left < right)
+                {
+                    List<Integer> curt = new ArrayList<>();
+
+                    if(nums[left] + nums[right] > target)
+                    {
+                        right--;
+                    }
+                    else if(nums[left] + nums[right] < target)
+                    {
+                        left++;
+                    }
+                    else
+                    {
+                        curt.add(nums[i]);
+                        curt.add(nums[left]);
+                        curt.add(nums[right]);
+                        if(!hashset.contains(curt))
+                        {
+                            hashset.add(curt);
+                        }
+                            
+                        left++;
+                        right--;
+                    }
+                    
+                    if(left >= right)
+                    {
+                        break;
+                    }
                 }
             }
+            
+            i++;
         }
+        
+        return new ArrayList<>(hashset);
     }
 }
