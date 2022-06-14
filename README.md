@@ -11,6 +11,9 @@
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/Arrays/347-top-k-frequent-elements)
 
 ### Stack
+:small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
+
+### Stack
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
