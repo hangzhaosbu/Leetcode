@@ -17,7 +17,7 @@ class Solution {
                 i++;    
             }
             
-            if(i < N)
+            if(i < N && nums[i] <= 0)
             {
                 int target = 0 - nums[i];
                 int left = i + 1, right = N - 1;
