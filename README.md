@@ -10,8 +10,10 @@
 :small_orange_diamond:[271. encode-and-decode-strings](https://github.com/Frannky/Leetcode/tree/master/Arrays/271-encode-and-decode-strings) \
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/Arrays/347-top-k-frequent-elements)
 
-### Stack
+### TwoPointers
+:small_orange_diamond:[15. 3sum](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/15-3sum) \
 :small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
+
 
 ### Stack
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
@@ -71,7 +73,6 @@
 
 * #### 0/1 Knapsack
   :small_orange_diamond:[416. partition-equal-subset-sum](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/416-partition-equal-subset-sum)
-
 
 * #### Counting DP
   :small_orange_diamond:[91. decode-ways](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/91-decode-ways)
