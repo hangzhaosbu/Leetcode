@@ -23,6 +23,7 @@
 :small_orange_diamond:[36. valid-sudoku](https://github.com/Frannky/Leetcode/tree/master/HashMap/36-valid-sudoku)
 
 ### LinkedList
+:small_orange_diamond:[21. merge-two-sorted-lists](https://github.com/Frannky/Leetcode/tree/master/LinkedList/21-merge-two-sorted-lists) \
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
 ### Tree
