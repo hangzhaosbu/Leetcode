@@ -15,7 +15,6 @@
 :small_orange_diamond:[15. 3sum](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/15-3sum) \
 :small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
 
-
 ### Stack
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
@@ -36,6 +35,9 @@
 
 ### Backtracking
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
+
+### SlidingWindow
+:small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters)
 
 ### UnionFind
 :small_orange_diamond:[128. longest-consecutive-sequence](https://github.com/Frannky/Leetcode/tree/master/UnionFind/128-longest-consecutive-sequence)
