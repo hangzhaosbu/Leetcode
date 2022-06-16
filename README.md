@@ -37,7 +37,9 @@
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
 
 ### SlidingWindow
-:small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters)
+:small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters) \
+:small_orange_diamond:[76. minimum-window-substring](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/76-minimum-window-substring) \
+:small_orange_diamond:[424. longest-repeating-character-replacement](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/424-longest-repeating-character-replacement)
 
 ### UnionFind
 :small_orange_diamond:[128. longest-consecutive-sequence](https://github.com/Frannky/Leetcode/tree/master/UnionFind/128-longest-consecutive-sequence)
