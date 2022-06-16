@@ -28,21 +28,18 @@ class Solution {
                     curt.next = list2;
                     list2 = list2.next;
                 }
-                
-                curt = curt.next;
             }
             else if(list1 == null)
             {
                 curt.next = list2;
                 list2 = list2.next;
-                curt = curt.next;
             }
             else
             {
                 curt.next = list1;
                 list1 = list1.next;
-                curt = curt.next;
             }
+            curt = curt.next;
         }
         
         return head.next;
