@@ -26,12 +26,7 @@ class Solution {
                 hashmap[s.charAt(j++) - 'A']++;
             }
             
-            if(valid(hashmap, k))
-                result = Math.max(result, j - i);
-            else
-            {
-                result = Math.max(result, j - i - 1);
-            }
+            result = Math.max(result, valid(hashmap, k) ? j - i : j - i - 1);
             hashmap[s.charAt(i) - 'A']--;
         }
         
