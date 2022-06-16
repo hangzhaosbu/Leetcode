@@ -31,6 +31,7 @@
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
 ### Tree
+:small_orange_diamond:[100. same-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/100-same-tree) \
 :small_orange_diamond:[104. maximum-depth-of-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/104-maximum-depth-of-binary-tree) \
 :small_orange_diamond:[226. invert-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/226-invert-binary-tree) \
 :small_orange_diamond:[1379. find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) \
