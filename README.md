@@ -16,6 +16,7 @@
 :small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
 
 ### Stack
+:small_orange_diamond:[20. valid-parentheses](https://github.com/Frannky/Leetcode/tree/master/Stack/20-valid-parentheses) \
 :small_orange_diamond:[1762. buildings-with-an-ocean-view](https://github.com/Frannky/Leetcode/tree/master/Stack/1762-buildings-with-an-ocean-view)
 
 ### HashMap
@@ -131,7 +132,8 @@
 :calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle) \
 :calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings) \
 :calendar: 06/14/2022 :small_orange_diamond:[1048. longest-string-chain](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1048-longest-string-chain) \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation) \
+:calendar: 06/15/2022 :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring)
 
 
 
