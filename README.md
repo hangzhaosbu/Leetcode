@@ -127,7 +127,7 @@
 :calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle) \
 :calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings) \
 :calendar: 06/14/2022 :small_orange_diamond:[1048. longest-string-chain](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1048-longest-string-chain) \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation) \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation)
 
 
 
