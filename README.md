@@ -11,6 +11,7 @@
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/Arrays/347-top-k-frequent-elements)
 
 ### TwoPointers
+:small_orange_diamond:[11. container-with-most-water](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/11-container-with-most-water) \
 :small_orange_diamond:[15. 3sum](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/15-3sum) \
 :small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
 
@@ -84,6 +85,9 @@
   * Palindromic Subsequence/Substring \
     :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring) 
 
+* #### Optimal Solution
+  :small_orange_diamond:[121. best-time-to-buy-and-sell-stock](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/121-best-time-to-buy-and-sell-stock)
+
 * #### Others
   :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
 
@@ -121,7 +125,9 @@
 :calendar: 06/10/2022 :small_orange_diamond:[1658. minimum-operations-to-reduce-x-to-zero](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1658-minimum-operations-to-reduce-x-to-zero) \
 :calendar: 06/11/2022 :small_orange_diamond:[1695. maximum-erasure-value](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1695-maximum-erasure-value) \
 :calendar: 06/12/2022 :small_orange_diamond:[120. triangle](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/120-triangle) \
-:calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings)
+:calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings) \
+:calendar: 06/14/2022 :small_orange_diamond:[1048. longest-string-chain](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1048-longest-string-chain) \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation) \
 
 
 
