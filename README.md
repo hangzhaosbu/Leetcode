@@ -24,6 +24,7 @@
 
 ### LinkedList
 :small_orange_diamond:[21. merge-two-sorted-lists](https://github.com/Frannky/Leetcode/tree/master/LinkedList/21-merge-two-sorted-lists) \
+:small_orange_diamond:[143. reorder-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/143-reorder-list) \
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
 ### Tree
