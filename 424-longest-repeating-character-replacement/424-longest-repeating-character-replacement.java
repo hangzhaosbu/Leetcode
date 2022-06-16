@@ -1,28 +1,16 @@
 class Solution {
     
-    private boolean valid(int[] hashmap, int j, int k, String s)
+    private boolean valid(int[] hashmap, int k)
     {
-        int max_val = 0, flag = 0;
-        int count = 0;
+        int max_val = 0, sum = 0;
         
         for(int num : hashmap)
         {
             max_val = Math.max(max_val, num);
+            sum += num;
         }
         
-        for(int num : hashmap)
-        {
-            if(num == max_val && flag == 0)
-            {
-                flag = 1;
-            }
-            else
-            {
-                count += num;
-            }
-        }
-        
-        return count <= k;
+        return sum - max_val <= k;
     }
     
     public int characterReplacement(String s, int k) {
@@ -33,12 +21,12 @@ class Solution {
         int j = 0;
         for(int i = 0; i < N; ++i)
         {
-            while(j < N && valid(hashmap, j, k, s))
+            while(j < N && valid(hashmap, k))
             {
                 hashmap[s.charAt(j++) - 'A']++;
             }
             
-            if(valid(hashmap, j, k, s))
+            if(valid(hashmap, k))
                 result = Math.max(result, j - i);
             else
             {
