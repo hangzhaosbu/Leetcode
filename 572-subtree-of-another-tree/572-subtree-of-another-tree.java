@@ -38,6 +38,6 @@ class Solution {
         {
             return false;
         }
-        return root.val == subRoot.val ? SameTree(root, subRoot) || isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot) : isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
+        return SameTree(root, subRoot) || isSubtree(root.left, subRoot) || isSubtree(root.right, subRoot);
     }
 }
