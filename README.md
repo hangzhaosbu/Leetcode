@@ -150,7 +150,8 @@
 :calendar: 06/13/2022 :small_orange_diamond:[583. delete-operation-for-two-strings](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/583-delete-operation-for-two-strings) \
 :calendar: 06/14/2022 :small_orange_diamond:[1048. longest-string-chain](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1048-longest-string-chain) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation) \
-:calendar: 06/15/2022 :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring)
+:calendar: 06/15/2022 :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring) \
+:calendar: 06/16/2022 :small_orange_diamond:[968. binary-tree-cameras](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/968-binary-tree-cameras)
 
 
 
