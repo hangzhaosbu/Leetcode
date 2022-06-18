@@ -154,7 +154,8 @@
 :calendar: 06/14/2022 :small_orange_diamond:[1048. longest-string-chain](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1048-longest-string-chain) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[527. word-abbreviation](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/527-word-abbreviation) \
 :calendar: 06/15/2022 :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring) \
-:calendar: 06/16/2022 :small_orange_diamond:[968. binary-tree-cameras](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/968-binary-tree-cameras)
+:calendar: 06/16/2022 :small_orange_diamond:[968. binary-tree-cameras](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/968-binary-tree-cameras) \
+:calendar: 06/17/2022 :small_orange_diamond:[745. prefix-and-suffix-search](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/745-prefix-and-suffix-search)
 
 
 
