@@ -14,62 +14,37 @@
  * }
  */
 class Solution {
-    public TreeNode buildTree(int[] preorder, int[] inorder)
+    
+    private TreeNode BT(int p_left, int p_right, int i_left, int i_right, int[] preorder, int[] inorder)
     {
-        if(preorder.length == 0 || inorder.length == 0)
+        if(p_left > p_right || i_left > i_right)
         {
             return null;
         }
         
         int index = 0;
         
-        for(int i = 0; i < inorder.length; ++i)
+        for(int i = i_left; i <= i_right; ++i)
         {
-            if(inorder[i] == preorder[0])
+            if(inorder[i] == preorder[p_left])
             {
                 index = i;
                 break;
             }
         }
         
-        int[] l_preorder = new int[index];
-        int[] r_preorder = new int[inorder.length - index - 1];
-        
-        int[] l_inorder = new int[index];
-        int[] r_inorder = new int[inorder.length - index - 1];
-        
-        int lp = 0, rp = 0, li = 0, ri = 0;
-        
-        for(int i = 0; i < inorder.length; ++i)
-        {
-            if(i < index)
-            {
-                l_inorder[li++] = inorder[i];
-            }
+        TreeNode root = new TreeNode(preorder[p_left]);
+        root.left = BT(p_left + 1, p_left + 1 + (index - i_left) - 1, i_left, index - 1, preorder, inorder);
+        root.right = BT(p_left + 1 + (index - i_left), p_right, index + 1, i_right, preorder, inorder);
             
-            if(i > index)
-            {
-                r_inorder[ri++] = inorder[i];
-            }
-        }
-        
-        for(int i = 1; i < preorder.length; ++i)
-        {
-            if(i < 1 + index)
-            {
-                l_preorder[lp++] = preorder[i];
-            }
-            
-            if(i >= 1 + index)
-            {
-                r_preorder[rp++] = preorder[i];
-            }
-        }
-        
-        TreeNode root = new TreeNode(preorder[0]);
-        root.left = buildTree(l_preorder, l_inorder);
-        root.right = buildTree(r_preorder, r_inorder);
-        
         return root;
+    }
+    
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        if(preorder.length == 0 || inorder.length == 0)
+        {
+            return null;
+        }
+        return BT(0, preorder.length - 1, 0, inorder.length - 1, preorder, inorder);
     }
 }
