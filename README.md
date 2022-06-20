@@ -45,7 +45,8 @@
 :small_orange_diamond:[1650. lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/Frannky/Leetcode/tree/master/Tree/1650-lowest-common-ancestor-of-a-binary-tree-iii)
 
 ### Trie
-:small_orange_diamond:[208. implement-trie-prefix-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/208-implement-trie-prefix-tree)
+:small_orange_diamond:[208. implement-trie-prefix-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/208-implement-trie-prefix-tree) \
+:small_orange_diamond:[211. design-add-and-search-words-data-structure](https://github.com/Frannky/Leetcode/tree/master/Tree/211-design-add-and-search-words-data-structure)
 
 ### BinarySearch
 :small_orange_diamond:[33. search-in-rotated-sorted-array](https://github.com/Frannky/Leetcode/tree/master/BinarySearch/33-search-in-rotated-sorted-array) \
