@@ -46,7 +46,8 @@
 
 ### Trie
 :small_orange_diamond:[208. implement-trie-prefix-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/208-implement-trie-prefix-tree) \
-:small_orange_diamond:[211. design-add-and-search-words-data-structure](https://github.com/Frannky/Leetcode/tree/master/Tree/211-design-add-and-search-words-data-structure)
+:small_orange_diamond:[211. design-add-and-search-words-data-structure](https://github.com/Frannky/Leetcode/tree/master/Tree/211-design-add-and-search-words-data-structure) \
+:small_orange_diamond:[212-word-search-ii](https://github.com/Frannky/Leetcode/tree/master/Tree/212-word-search-ii)
 
 ### BinarySearch
 :small_orange_diamond:[33. search-in-rotated-sorted-array](https://github.com/Frannky/Leetcode/tree/master/BinarySearch/33-search-in-rotated-sorted-array) \
