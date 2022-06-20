@@ -23,17 +23,14 @@ class Trie
     {
         TrieNode node = root;
         int N = word.length();
-        
         for(int i = 0; i < N; ++i)
         {
             if(node.children[word.charAt(i) - 'a'] == null)
             {
                 node.children[word.charAt(i) - 'a'] = new TrieNode();
             }
-            
             node = node.children[word.charAt(i) - 'a'];
         }
-        
         node.isWord = true;
     }
 }
@@ -50,32 +47,24 @@ class Solution
             root.isWord = false;
         }
         
-        
-        if(row < 0 || row >= N || col < 0 || col >= M)
+        if(row < 0 || row >= N || col < 0 || col >= M || visited.contains(row * M + col))
         {
             return;
         }
         
-        if(visited.contains(row * M + col))
-        {
-            return;
-        }
-        
-        visited.add(row * M + col);
         if(root.children[board[row][col] - 'a'] != null)
         {
-            char curt = board[row][col];
-            str.append(curt);
+            visited.add(row * M + col);
+            str.append(board[row][col]);
             
-            dfs(row + 1, col, N, M, board, root.children[curt - 'a'], str, visited);
-            dfs(row - 1, col, N, M, board, root.children[curt - 'a'], str, visited);
-            dfs(row, col + 1, N, M, board, root.children[curt - 'a'], str, visited);
-            dfs(row, col - 1, N, M, board, root.children[curt - 'a'], str, visited);
+            dfs(row + 1, col, N, M, board, root.children[board[row][col] - 'a'], str, visited);
+            dfs(row - 1, col, N, M, board, root.children[board[row][col] - 'a'], str, visited);
+            dfs(row, col + 1, N, M, board, root.children[board[row][col] - 'a'], str, visited);
+            dfs(row, col - 1, N, M, board, root.children[board[row][col] - 'a'], str, visited);
             
             str.deleteCharAt(str.length() - 1);
+            visited.remove(row * M + col);
         }
-        
-        visited.remove(row * M + col);
     }
     
     public List<String> findWords(char[][] board, String[] words)
@@ -83,14 +72,12 @@ class Solution
         result = new HashSet<>();
         Trie trie = new Trie();
         HashSet<Integer> visited = new HashSet<>();
+        int N = board.length, M = board[0].length;
         
         for(String word : words)
         {
             trie.addWord(word);
         }
-        
-        int N = board.length, M = board[0].length;
-        
         for(int i = 0; i < N; ++i)
         {
             for(int j = 0; j < M; ++j)
@@ -102,4 +89,3 @@ class Solution
         return new ArrayList<>(result);
     }
 }
-
