@@ -34,8 +34,8 @@ class Solution {
             }
         }
         
-        node.left = BT(left_p + 1, left_p + 1 + (index - left_i) - 1, left_i, index - 1, preorder, inorder);
-        node.right = BT(left_p + 1 + (index - left_i), right_p, index + 1, right_i, preorder, inorder);
+        node.left = BT(left_p + 1, left_p + index - left_i, left_i, index - 1, preorder, inorder);
+        node.right = BT(left_p + 1 + index - left_i, right_p, index + 1, right_i, preorder, inorder);
         
         return node;
     }
