@@ -35,6 +35,7 @@
 :small_orange_diamond:[100. same-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/100-same-tree) \
 :small_orange_diamond:[102. binary-tree-level-order-traversal](https://github.com/Frannky/Leetcode/tree/master/Tree/102-binary-tree-level-order-traversal) \
 :small_orange_diamond:[104. maximum-depth-of-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/104-maximum-depth-of-binary-tree) \
+:small_orange_diamond:[105. construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Frannky/Leetcode/tree/master/Tree/105-construct-binary-tree-from-preorder-and-inorder-traversal) \
 :small_orange_diamond:[226. invert-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/226-invert-binary-tree) \
 :small_orange_diamond:[230. kth-smallest-element-in-a-bst](https://github.com/Frannky/Leetcode/tree/master/Tree/230-kth-smallest-element-in-a-bst) \
 :small_orange_diamond:[235. lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/235-lowest-common-ancestor-of-a-binary-search-tree) \
@@ -156,7 +157,8 @@
 :calendar: 06/15/2022 :small_orange_diamond:[5. longest-palindromic-substring](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/5-longest-palindromic-substring) \
 :calendar: 06/16/2022 :small_orange_diamond:[968. binary-tree-cameras](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/968-binary-tree-cameras) \
 :calendar: 06/17/2022 :small_orange_diamond:[745. prefix-and-suffix-search](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/745-prefix-and-suffix-search) \
-:calendar: 06/18/2022 :small_orange_diamond:[1268. search-suggestions-system](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1268-search-suggestions-system)
+:calendar: 06/18/2022 :small_orange_diamond:[1268. search-suggestions-system](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1268-search-suggestions-system) \
+:calendar: 06/19/2022 :small_orange_diamond:[820. short-encoding-of-words](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/820-short-encoding-of-words)
 
 
 
