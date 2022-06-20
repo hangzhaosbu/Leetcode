@@ -36,6 +36,7 @@
 :small_orange_diamond:[102. binary-tree-level-order-traversal](https://github.com/Frannky/Leetcode/tree/master/Tree/102-binary-tree-level-order-traversal) \
 :small_orange_diamond:[104. maximum-depth-of-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/104-maximum-depth-of-binary-tree) \
 :small_orange_diamond:[105. construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/Frannky/Leetcode/tree/master/Tree/105-construct-binary-tree-from-preorder-and-inorder-traversal) \
+:small_orange_diamond:[124. binary-tree-maximum-path-sum](https://github.com/Frannky/Leetcode/tree/master/Tree/124-binary-tree-maximum-path-sum) \
 :small_orange_diamond:[226. invert-binary-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/226-invert-binary-tree) \
 :small_orange_diamond:[230. kth-smallest-element-in-a-bst](https://github.com/Frannky/Leetcode/tree/master/Tree/230-kth-smallest-element-in-a-bst) \
 :small_orange_diamond:[235. lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/235-lowest-common-ancestor-of-a-binary-search-tree) \
