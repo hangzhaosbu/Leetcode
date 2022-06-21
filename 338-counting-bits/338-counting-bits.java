@@ -46,7 +46,7 @@ class Solution {
     
     private boolean valid(int num)
     {
-        while(num > 0 && num % 2 == 0)
+        while(num % 2 == 0)
         {
             num /= 2;
         }
