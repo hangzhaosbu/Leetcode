@@ -62,7 +62,8 @@
 :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
 
 ### Backtracking
-:small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver)
+:small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver) \
+:small_orange_diamond:[39. combination-sum](https://github.com/Frannky/Leetcode/tree/master/Backtracking/39-combination-sum)
 
 ### SlidingWindow
 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters) \
