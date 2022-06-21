@@ -130,7 +130,11 @@
 
 ### Bit Manipulation
 :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/191-number-of-1-bits) \
+:small_orange_diamond:[268. missing-number](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/268-missing-number) \
 :small_orange_diamond:[338. counting-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/338-counting-bits)
+
+### Math & Geometry
+:small_orange_diamond:[48. rotate-image](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/48-rotate-image) \
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
