@@ -32,8 +32,7 @@ class Solution {
         
         for(int i = 0; i < 4; ++i)
         {
-            int new_x = x + directions[i][0], new_y = y + directions[i][1];
-            dfs(new_x, new_y, N, M, grid);
+            dfs(x + directions[i][0], y + directions[i][1], N, M, grid);
         }
     }
 }
