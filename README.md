@@ -30,6 +30,9 @@
 :small_orange_diamond:[143. reorder-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/143-reorder-list) \
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
+### Graphs (BFS/DFS)
+:small_orange_diamond:[200. number-of-islands](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/200-number-of-islands)
+
 ### Tree
 :small_orange_diamond:[98. validate-binary-search-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/98-validate-binary-search-tree) \
 :small_orange_diamond:[100. same-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/100-same-tree) \
