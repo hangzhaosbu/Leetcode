@@ -63,7 +63,8 @@
 
 ### Backtracking
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver) \
-:small_orange_diamond:[39. combination-sum](https://github.com/Frannky/Leetcode/tree/master/Backtracking/39-combination-sum)
+:small_orange_diamond:[39. combination-sum](https://github.com/Frannky/Leetcode/tree/master/Backtracking/39-combination-sum) \
+:small_orange_diamond:[79. word-search](https://github.com/Frannky/Leetcode/tree/master/Backtracking/79-word-search)
 
 ### SlidingWindow
 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters) \
