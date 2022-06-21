@@ -10,7 +10,7 @@
 :small_orange_diamond:[271. encode-and-decode-strings](https://github.com/Frannky/Leetcode/tree/master/Arrays/271-encode-and-decode-strings) \
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/Arrays/347-top-k-frequent-elements)
 
-### TwoPointers
+### Two Pointers
 :small_orange_diamond:[11. container-with-most-water](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/11-container-with-most-water) \
 :small_orange_diamond:[15. 3sum](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/15-3sum) \
 :small_orange_diamond:[125. valid-palindrome](https://github.com/Frannky/Leetcode/tree/master/TwoPointers/125-valid-palindrome)
@@ -52,7 +52,7 @@
 :small_orange_diamond:[211. design-add-and-search-words-data-structure](https://github.com/Frannky/Leetcode/tree/master/Tree/211-design-add-and-search-words-data-structure) \
 :small_orange_diamond:[212-word-search-ii](https://github.com/Frannky/Leetcode/tree/master/Tree/212-word-search-ii)
 
-### BinarySearch
+### Binary Search
 :small_orange_diamond:[33. search-in-rotated-sorted-array](https://github.com/Frannky/Leetcode/tree/master/BinarySearch/33-search-in-rotated-sorted-array) \
 :small_orange_diamond:[153. find-minimum-in-rotated-sorted-array](https://github.com/Frannky/Leetcode/tree/master/BinarySearch/153-find-minimum-in-rotated-sorted-array)
 
@@ -69,15 +69,15 @@
 :small_orange_diamond:[39. combination-sum](https://github.com/Frannky/Leetcode/tree/master/Backtracking/39-combination-sum) \
 :small_orange_diamond:[79. word-search](https://github.com/Frannky/Leetcode/tree/master/Backtracking/79-word-search)
 
-### SlidingWindow
+### Sliding Window
 :small_orange_diamond:[3. longest-substring-without-repeating-characters](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/3-longest-substring-without-repeating-characters) \
 :small_orange_diamond:[76. minimum-window-substring](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/76-minimum-window-substring) \
 :small_orange_diamond:[424. longest-repeating-character-replacement](https://github.com/Frannky/Leetcode/tree/master/SlidingWindow/424-longest-repeating-character-replacement)
 
-### UnionFind
+### Union Find
 :small_orange_diamond:[128. longest-consecutive-sequence](https://github.com/Frannky/Leetcode/tree/master/UnionFind/128-longest-consecutive-sequence)
 
-### QuickSelect
+### Quick Select
 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/215-kth-largest-element-in-an-array) \
 :small_orange_diamond:[347. top-k-frequent-elements](https://github.com/Frannky/Leetcode/tree/master/QuickSelect/347-top-k-frequent-elements)
 
@@ -127,6 +127,10 @@
 
 * #### Others
   :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
+
+### Bit Manipulation
+:small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/191-number-of-1-bits) \
+:small_orange_diamond:[338. counting-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/338-counting-bits)
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
