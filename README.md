@@ -134,7 +134,7 @@
 :small_orange_diamond:[338. counting-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/338-counting-bits)
 
 ### Math & Geometry
-:small_orange_diamond:[48. rotate-image](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/48-rotate-image) \
+:small_orange_diamond:[48. rotate-image](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/48-rotate-image)
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
