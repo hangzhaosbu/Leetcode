@@ -167,6 +167,7 @@
 :calendar: 06/17/2022 :small_orange_diamond:[745. prefix-and-suffix-search](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/745-prefix-and-suffix-search) \
 :calendar: 06/18/2022 :small_orange_diamond:[1268. search-suggestions-system](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1268-search-suggestions-system) \
 :calendar: 06/19/2022 :small_orange_diamond:[820. short-encoding-of-words](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/820-short-encoding-of-words)
+:calendar: 06/20/2022 :small_orange_diamond:[1642. furthest-building-you-can-reach](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1642-furthest-building-you-can-reach)
 
 
 
