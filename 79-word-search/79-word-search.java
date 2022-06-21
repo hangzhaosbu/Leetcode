@@ -10,7 +10,7 @@ class Solution {
         {
             for(int j = 0; j < M; ++j)
             {
-                if(dfs(board, i, j, word, 0, visited))
+                if(word.charAt(0) == board[i][j] && dfs(board, i, j, word, 0, visited))
                 {
                     return true;
                 }
