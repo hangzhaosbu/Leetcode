@@ -1,7 +1,4 @@
 class Solution {
-    
-    int[][] directions = new int[][]{{0,1}, {0,-1}, {1,0}, {-1,0}};
-    
     public int numIslands(char[][] grid) 
     {
         int N = grid.length, M = grid[0].length, count = 0;
@@ -27,12 +24,10 @@ class Solution {
         {
             return;
         }
-        
         grid[x][y] = '0';
-        
-        for(int i = 0; i < 4; ++i)
-        {
-            dfs(x + directions[i][0], y + directions[i][1], N, M, grid);
-        }
+        dfs(x + 1, y, N, M, grid);
+        dfs(x - 1, y, N, M, grid);
+        dfs(x, y + 1, N, M, grid);
+        dfs(x, y - 1, N, M, grid);
     }
 }
