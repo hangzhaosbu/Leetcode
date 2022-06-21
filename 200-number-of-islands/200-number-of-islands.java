@@ -13,7 +13,7 @@ class Solution {
                 if(grid[i][j] == '1')
                 {
                     count++;
-                    dfs(i, j, grid);
+                    dfs(i, j, N, M, grid);
                 }
             }
         }
@@ -21,15 +21,9 @@ class Solution {
         return count;
     }
     
-    private void dfs(int x, int y, char[][] grid)
+    private void dfs(int x, int y, int N, int M, char[][] grid)
     {
-        int N = grid.length, M = grid[0].length;
-        if(x < 0 || x >= N || y < 0 || y >= M)
-        {
-            return;
-        }
-        
-        if(grid[x][y] == '0')
+        if(x < 0 || x >= N || y < 0 || y >= M || grid[x][y] == '0')
         {
             return;
         }
@@ -39,7 +33,7 @@ class Solution {
         for(int i = 0; i < 4; ++i)
         {
             int new_x = x + directions[i][0], new_y = y + directions[i][1];
-            dfs(new_x, new_y, grid);
+            dfs(new_x, new_y, N, M, grid);
         }
     }
 }
