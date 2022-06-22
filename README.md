@@ -60,6 +60,7 @@
 :small_orange_diamond:[2251. number-of-flowers-in-full-bloom](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2251-number-of-flowers-in-full-bloom)
 
 ### TreeMap
+:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/TreeMap/57-insert-interval) \
 :small_orange_diamond:[352. data-stream-as-disjoint-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/352-data-stream-as-disjoint-intervals) \
 :small_orange_diamond:[2158. amount-of-new-area-painted-each-day](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2158-amount-of-new-area-painted-each-day) \
 :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
