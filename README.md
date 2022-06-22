@@ -139,7 +139,8 @@
 :small_orange_diamond:[73. set-matrix-zeroes](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/73-set-matrix-zeroes)
 
 ### Greedy
-:small_orange_diamond:[53-maximum-subarray](https://github.com/Frannky/Leetcode/tree/master/Greedy/53-maximum-subarray) \
+:small_orange_diamond:[53. maximum-subarray](https://github.com/Frannky/Leetcode/tree/master/Greedy/53-maximum-subarray) \
+:small_orange_diamond:[55. jump-game](https://github.com/Frannky/Leetcode/tree/master/Greedy/55-jump-game)
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
