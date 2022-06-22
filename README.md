@@ -138,6 +138,9 @@
 :small_orange_diamond:[54. spiral-matrix](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/54-spiral-matrix) \
 :small_orange_diamond:[73. set-matrix-zeroes](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/73-set-matrix-zeroes)
 
+### Greedy
+:small_orange_diamond:[53-maximum-subarray](https://github.com/Frannky/Leetcode/tree/master/Greedy/53-maximum-subarray) \
+
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
 :calendar: 05/17/2022 :small_orange_diamond:[1192. critical-connections-in-a-network](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1192-critical-connections-in-a-network) \
