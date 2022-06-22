@@ -129,9 +129,11 @@
   :small_orange_diamond:[152. maximum-product-subarray](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/152-maximum-product-subarray)
 
 ### Bit Manipulation
+:small_orange_diamond:[190. reverse-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/190-reverse-bits) \
 :small_orange_diamond:[191. number-of-1-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/191-number-of-1-bits) \
 :small_orange_diamond:[268. missing-number](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/268-missing-number) \
-:small_orange_diamond:[338. counting-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/338-counting-bits)
+:small_orange_diamond:[338. counting-bits](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/338-counting-bits) \
+:small_orange_diamond:[371. sum-of-two-integers](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/371-sum-of-two-integers)
 
 ### Math & Geometry
 :small_orange_diamond:[48. rotate-image](https://github.com/Frannky/Leetcode/tree/master/BitManipulation/48-rotate-image) \
