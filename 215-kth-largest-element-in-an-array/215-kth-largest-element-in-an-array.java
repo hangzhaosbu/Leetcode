@@ -4,12 +4,13 @@ class Solution {
     {
         int pivot = nums[(left + right) / 2];
         int i = left, t = left, j = right;
+        int temp = 0;
         
         while(t <= j)
         {
             if(nums[t] < pivot)
             {
-                int temp = nums[t];
+                temp = nums[t];
                 nums[t] = nums[i];
                 nums[i] = temp;
                 i++;
@@ -17,7 +18,7 @@ class Solution {
             }
             else if(nums[t] > pivot)
             {
-                int temp = nums[t];
+                temp = nums[t];
                 nums[t] = nums[j];
                 nums[j] = temp;
                 j--;
