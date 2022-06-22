@@ -179,7 +179,8 @@
 :calendar: 06/18/2022 :small_orange_diamond:[1268. search-suggestions-system](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1268-search-suggestions-system) \
 :calendar: 06/19/2022 :small_orange_diamond:[820. short-encoding-of-words](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/820-short-encoding-of-words) \
 :calendar: 06/20/2022 :small_orange_diamond:[1642. furthest-building-you-can-reach](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1642-furthest-building-you-can-reach) \
-:calendar: 06/21/2022 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/215-kth-largest-element-in-an-array)
+:calendar: 06/21/2022 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/215-kth-largest-element-in-an-array) \
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) 
 
 
 
