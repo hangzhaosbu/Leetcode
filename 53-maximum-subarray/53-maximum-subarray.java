@@ -5,12 +5,7 @@ class Solution {
         
         for(int num : nums)
         {
-            running_sum += num;
-            
-            if(running_sum < num){
-                running_sum = num;
-            }
-            
+            running_sum = running_sum + num < num ? num : running_sum + num;
             result = Math.max(result, running_sum);
         }
         
