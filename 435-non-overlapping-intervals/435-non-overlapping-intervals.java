@@ -8,12 +8,12 @@ class Solution {
         });
         
         int i = 0, N = intervals.length;
-        int count = 0;
+        int count = 0, j = 0;
         
         while(i < N)
         {
             count++;
-            int j = i + 1;
+            j = i + 1;
             
             while(j < N && intervals[j][0] < intervals[i][1])
             {
