@@ -61,7 +61,9 @@
 
 ### Intervals
 :small_orange_diamond:[56. merge-intervals](https://github.com/Frannky/Leetcode/tree/master/Intervals/56-merge-intervals) \
-:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval)
+:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval) \
+:small_orange_diamond:[252. meeting-rooms](https://github.com/Frannky/Leetcode/tree/master/Intervals/252-meeting-rooms) \
+:small_orange_diamond:[253. meeting-rooms-ii](https://github.com/Frannky/Leetcode/tree/master/Intervals/253-meeting-rooms-ii)
 
 ### TreeMap
 :small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/TreeMap/57-insert-interval) \
