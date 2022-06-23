@@ -59,6 +59,10 @@
 ### SortedList
 :small_orange_diamond:[2251. number-of-flowers-in-full-bloom](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2251-number-of-flowers-in-full-bloom)
 
+### Intervals
+:small_orange_diamond:[56. merge-intervals](https://github.com/Frannky/Leetcode/tree/master/Intervals/56-merge-intervals) \
+:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval)
+
 ### TreeMap
 :small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/TreeMap/57-insert-interval) \
 :small_orange_diamond:[352. data-stream-as-disjoint-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/352-data-stream-as-disjoint-intervals) \
@@ -189,7 +193,8 @@
 :calendar: 06/19/2022 :small_orange_diamond:[820. short-encoding-of-words](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/820-short-encoding-of-words) \
 :calendar: 06/20/2022 :small_orange_diamond:[1642. furthest-building-you-can-reach](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1642-furthest-building-you-can-reach) \
 :calendar: 06/21/2022 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/215-kth-largest-element-in-an-array) \
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) \
+:calendar: 06/22/2022 :small_orange_diamond:[630. course-schedule-iii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/630-course-schedule-iii)
 
 
 
