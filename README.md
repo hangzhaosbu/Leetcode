@@ -59,18 +59,6 @@
 ### SortedList
 :small_orange_diamond:[2251. number-of-flowers-in-full-bloom](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2251-number-of-flowers-in-full-bloom)
 
-### Intervals
-:small_orange_diamond:[56. merge-intervals](https://github.com/Frannky/Leetcode/tree/master/Intervals/56-merge-intervals) \
-:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval) \
-:small_orange_diamond:[252. meeting-rooms](https://github.com/Frannky/Leetcode/tree/master/Intervals/252-meeting-rooms) \
-:small_orange_diamond:[253. meeting-rooms-ii](https://github.com/Frannky/Leetcode/tree/master/Intervals/253-meeting-rooms-ii)
-
-### TreeMap
-:small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/TreeMap/57-insert-interval) \
-:small_orange_diamond:[352. data-stream-as-disjoint-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/352-data-stream-as-disjoint-intervals) \
-:small_orange_diamond:[2158. amount-of-new-area-painted-each-day](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2158-amount-of-new-area-painted-each-day) \
-:small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
-
 ### Backtracking
 :small_orange_diamond:[37. sudoku-solver](https://github.com/Frannky/Leetcode/tree/master/Backtracking/37-sudoku-solver) \
 :small_orange_diamond:[39. combination-sum](https://github.com/Frannky/Leetcode/tree/master/Backtracking/39-combination-sum) \
@@ -150,6 +138,22 @@
 ### Greedy
 :small_orange_diamond:[53. maximum-subarray](https://github.com/Frannky/Leetcode/tree/master/Greedy/53-maximum-subarray) \
 :small_orange_diamond:[55. jump-game](https://github.com/Frannky/Leetcode/tree/master/Greedy/55-jump-game)
+
+* #### Intervals
+  * Sort
+  1. sort by starting points -> the minimum number of intervals to cover the whole range \
+  2. sort by ending points -> the maximum number of intervals that are non-overlapping \
+  :small_orange_diamond:[56. merge-intervals](https://github.com/Frannky/Leetcode/tree/master/Intervals/56-merge-intervals) \
+  :small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval) \
+  :small_orange_diamond:[252. meeting-rooms](https://github.com/Frannky/Leetcode/tree/master/Intervals/252-meeting-rooms) \
+  :small_orange_diamond:[253. meeting-rooms-ii](https://github.com/Frannky/Leetcode/tree/master/Intervals/253-meeting-rooms-ii)
+
+  * TreeMap
+  :small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/TreeMap/57-insert-interval) \
+  :small_orange_diamond:[352. data-stream-as-disjoint-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/352-data-stream-as-disjoint-intervals) \
+  :small_orange_diamond:[2158. amount-of-new-area-painted-each-day](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2158-amount-of-new-area-painted-each-day) \
+  :small_orange_diamond:[2276. count-integers-in-intervals](https://github.com/Frannky/Leetcode/tree/master/TreeMap/2276-count-integers-in-intervals)
+
 
 ### Code Everyday :leaves: 
 :calendar: 05/16/2022 :small_orange_diamond:[1570. dot-product-of-two-sparse-vectors](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1570-dot-product-of-two-sparse-vectors) \
