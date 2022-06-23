@@ -142,8 +142,8 @@
 * #### Intervals
   * Sort 
   
-  1. sort by starting points -> the minimum number of intervals to cover the whole range
-  2. sort by ending points -> the maximum number of intervals that are non-overlapping
+    1. sort by starting points -> the minimum number of intervals to cover the whole range
+    2. sort by ending points -> the maximum number of intervals that are non-overlapping
   
     :small_orange_diamond:[56. merge-intervals](https://github.com/Frannky/Leetcode/tree/master/Intervals/56-merge-intervals) \
     :small_orange_diamond:[57. insert-interval](https://github.com/Frannky/Leetcode/tree/master/Intervals/57-insert-interval) \
