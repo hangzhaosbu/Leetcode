@@ -23,14 +23,9 @@ class Solution {
     HashMap<Node, Node> hashmap = new HashMap<>();
     public Node cloneGraph(Node node)
     {
-        if(node == null)
+        if(node == null || hashmap.containsKey(node))
         {
-            return null;
-        }
-        
-        if(hashmap.containsKey(node))
-        {
-            return hashmap.get(node);
+            return node == null ? null : hashmap.get(node);
         }
         
         Node new_node = new Node(node.val);
