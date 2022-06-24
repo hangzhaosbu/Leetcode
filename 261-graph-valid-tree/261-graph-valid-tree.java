@@ -52,7 +52,6 @@ class Solution
     public boolean validTree(int n, int[][] edges)
     {
         UnionFind uf = new UnionFind(n);
-        
         for(int[] edge : edges)
         {
             int x = edge[0], y = edge[1];
@@ -62,14 +61,6 @@ class Solution
                 return false;
             }
         }
-        
-        // for(int i = 0; i < n; ++i)
-        // {
-        //     uf.find(i);
-        // }
-        
-        
-        
         return uf.count == 1;
     }
 }
