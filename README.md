@@ -31,11 +31,11 @@
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
 ### Graphs (BFS/DFS/Topological Sorting/Union Find)
-:small_orange_diamond:[133. clone-graph](https://github.com/Frannky/Leetcode/tree/master/Graphs/133-clone-graph) \
+:small_orange_diamond:[133. clone-graph](https://github.com/Frannky/Leetcode/tree/master/Graphs/133-clone-graph)
 
 * #### BFS/DFS
   :small_orange_diamond:[200. number-of-islands](https://github.com/Frannky/Leetcode/tree/master/Graphs/200-number-of-islands) \
-  :small_orange_diamond:[417. pacific-atlantic-water-flow](https://github.com/Frannky/Leetcode/tree/master/Graphs/417-pacific-atlantic-water-flow) \
+  :small_orange_diamond:[417. pacific-atlantic-water-flow](https://github.com/Frannky/Leetcode/tree/master/Graphs/417-pacific-atlantic-water-flow)
 
 * #### Topological Sorting
   :small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs/207-course-schedule)
