@@ -41,6 +41,7 @@
   :small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs/207-course-schedule)
 
 * #### Union Find
+  :small_orange_diamond:[261-graph-valid-tree](https://github.com/Frannky/Leetcode/tree/master/Graphs/261-graph-valid-tree) \
   :small_orange_diamond:[323. number-of-connected-components-in-an-undirected-graph](https://github.com/Frannky/Leetcode/tree/master/Graphs/323-number-of-connected-components-in-an-undirected-graph)
 
 ### Tree
