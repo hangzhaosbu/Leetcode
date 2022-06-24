@@ -19,61 +19,28 @@ class Node {
 */
 
 class Solution {
+    
+    HashMap<Node, Node> hashmap = new HashMap<>();
     public Node cloneGraph(Node node)
     {
-        if(node == null) return null;
-        
-        HashMap<Node, Node> hashmap = new HashMap<>();
-        HashSet<Node> hashset = new HashSet<>();
-        Queue<Node> queue = new LinkedList<>();
-        queue.offer(node);
-        hashset.add(node);
-        
-        while(!queue.isEmpty())
+        if(node == null)
         {
-            int size = queue.size();
-            
-            for(int i = 0; i < size; ++i)
-            {
-                Node curt = queue.poll();
-                hashmap.put(curt, new Node(curt.val));
-                
-                for(Node neighbor : curt.neighbors)
-                {
-                    if(!hashset.contains(neighbor))
-                    {
-                        queue.offer(neighbor);
-                        hashset.add(neighbor);
-                    }
-                }
-            }
+            return null;
         }
         
-        hashset = new HashSet<>();
-        queue = new LinkedList<>();
-        queue.offer(node);
-        hashset.add(node);
-        
-        while(!queue.isEmpty())
+        if(hashmap.containsKey(node))
         {
-            int size = queue.size();
-            
-            for(int i = 0; i < size; ++i)
-            {
-                Node curt = queue.poll();
-                
-                for(Node neighbor : curt.neighbors)
-                {
-                    hashmap.get(curt).neighbors.add(hashmap.get(neighbor));
-                    
-                    if(!hashset.contains(neighbor))
-                    {
-                        queue.offer(neighbor);
-                        hashset.add(neighbor);
-                    }
-                }
-            }
+            return hashmap.get(node);
         }
-        return hashmap.get(node);
+        
+        Node new_node = new Node(node.val);
+        hashmap.put(node, new_node);
+        
+        for(Node neighbor : node.neighbors)
+        {
+            hashmap.get(node).neighbors.add(cloneGraph(neighbor));
+        }
+        
+        return new_node;
     }
 }
