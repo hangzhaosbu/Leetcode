@@ -40,6 +40,9 @@
 * #### Topological Sorting
   :small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs/207-course-schedule)
 
+* #### Union Find
+  :small_orange_diamond:[323. number-of-connected-components-in-an-undirected-graph](https://github.com/Frannky/Leetcode/tree/master/Graphs/323-number-of-connected-components-in-an-undirected-graph)
+
 ### Tree
 :small_orange_diamond:[98. validate-binary-search-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/98-validate-binary-search-tree) \
 :small_orange_diamond:[100. same-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/100-same-tree) \
