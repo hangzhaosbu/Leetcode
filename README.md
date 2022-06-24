@@ -31,7 +31,10 @@
 :small_orange_diamond:[206. reverse-linked-list](https://github.com/Frannky/Leetcode/tree/master/LinkedList/206-reverse-linked-list)
 
 ### Graphs (BFS/DFS)
-:small_orange_diamond:[200. number-of-islands](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/200-number-of-islands)
+:small_orange_diamond:[133. clone-graph](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/133-clone-graph) \
+:small_orange_diamond:[200. number-of-islands](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/200-number-of-islands) \
+:small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/207-course-schedule) \
+:small_orange_diamond:[417. pacific-atlantic-water-flow](https://github.com/Frannky/Leetcode/tree/master/Graphs(BFS&DFS)/417-pacific-atlantic-water-flow)
 
 ### Tree
 :small_orange_diamond:[98. validate-binary-search-tree](https://github.com/Frannky/Leetcode/tree/master/Tree/98-validate-binary-search-tree) \
@@ -204,7 +207,8 @@
 :calendar: 06/20/2022 :small_orange_diamond:[1642. furthest-building-you-can-reach](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1642-furthest-building-you-can-reach) \
 :calendar: 06/21/2022 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/215-kth-largest-element-in-an-array) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) \
-:calendar: 06/22/2022 :small_orange_diamond:[630. course-schedule-iii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/630-course-schedule-iii)
+:calendar: 06/22/2022 :small_orange_diamond:[630. course-schedule-iii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/630-course-schedule-iii) \
+:calendar: 06/23/2022 :small_orange_diamond:[1354. construct-target-array-with-multiple-sums](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1354-construct-target-array-with-multiple-sums)
 
 
 
