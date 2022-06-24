@@ -33,7 +33,7 @@ class Solution {
         
         for(Node neighbor : node.neighbors)
         {
-            hashmap.get(node).neighbors.add(cloneGraph(neighbor));
+            new_node.neighbors.add(cloneGraph(neighbor));
         }
         
         return new_node;
