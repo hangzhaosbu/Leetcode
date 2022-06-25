@@ -218,7 +218,7 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) \
 :calendar: 06/22/2022 :small_orange_diamond:[630. course-schedule-iii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/630-course-schedule-iii) \
 :calendar: 06/23/2022 :small_orange_diamond:[1354. construct-target-array-with-multiple-sums](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1354-construct-target-array-with-multiple-sums) \
-:calendar: 06/23/2022 :small_orange_diamond:[665. non-decreasing-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/665-non-decreasing-array)
+:calendar: 06/24/2022 :small_orange_diamond:[665. non-decreasing-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/665-non-decreasing-array)
 
 
 
