@@ -38,7 +38,8 @@
   :small_orange_diamond:[417. pacific-atlantic-water-flow](https://github.com/Frannky/Leetcode/tree/master/Graphs/417-pacific-atlantic-water-flow)
 
 * #### Topological Sorting
-  :small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs/207-course-schedule)
+  :small_orange_diamond:[207. course-schedule](https://github.com/Frannky/Leetcode/tree/master/Graphs/207-course-schedule) \
+  :small_orange_diamond:[269. alien-dictionary](https://github.com/Frannky/Leetcode/tree/master/Graphs/269-alien-dictionary)
 
 * #### Union Find
   :small_orange_diamond:[261-graph-valid-tree](https://github.com/Frannky/Leetcode/tree/master/Graphs/261-graph-valid-tree) \
@@ -216,7 +217,8 @@
 :calendar: 06/21/2022 :small_orange_diamond:[215. kth-largest-element-in-an-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/215-kth-largest-element-in-an-array) \
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;:star:[1229. meeting-scheduler](https://github.com/Frannky/Leetcode/tree/master/CodeEveryDay/1229-meeting-scheduler) \
 :calendar: 06/22/2022 :small_orange_diamond:[630. course-schedule-iii](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/630-course-schedule-iii) \
-:calendar: 06/23/2022 :small_orange_diamond:[1354. construct-target-array-with-multiple-sums](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1354-construct-target-array-with-multiple-sums)
+:calendar: 06/23/2022 :small_orange_diamond:[1354. construct-target-array-with-multiple-sums](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/1354-construct-target-array-with-multiple-sums) \
+:calendar: 06/23/2022 :small_orange_diamond:[665. non-decreasing-array](https://github.com/Frannky/Leetcode/tree/master/DynamicProgramming/665-non-decreasing-array)
 
 
 
