@@ -23,8 +23,9 @@ class Solution {
             int[] curr = new int[26];
             for(int i = 0; i < word.length(); ++i)
             {
-                curr[word.charAt(i) - 'a']++;
-                hashset[word.charAt(i) - 'a'] = Math.max(hashset[word.charAt(i) - 'a'], curr[word.charAt(i) - 'a']);
+                int c = word.charAt(i) - 'a';
+                curr[c]++;
+                hashset[c] = Math.max(hashset[c], curr[c]);
             }
         }
         
