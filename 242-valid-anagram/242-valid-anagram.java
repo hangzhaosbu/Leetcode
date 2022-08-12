@@ -1,28 +1,21 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
-        int N = s.length(), M = t.length();
+        int[] count = new int[26];
         
-        if(N != M)
+        for(int i = 0; i < s.length(); ++i)
         {
-            return false;
+            count[s.charAt(i) - 'a']++;
         }
         
-        int[] letter_s = new int[26];
-        int[] letter_t = new int[26];
-        
-        for(int i = 0; i < N; ++i)
+        for(int i = 0; i < t.length(); ++i)
         {
-            letter_s[s.charAt(i) - 'a']++;
+            count[t.charAt(i) - 'a']--;
         }
         
-        for(int i = 0; i < M; ++i)
-        {
-            letter_t[t.charAt(i) - 'a']++;
-        }
         
         for(int i = 0; i < 26; ++i)
         {
-            if(letter_s[i] != letter_t[i])
+            if(count[i] != 0)
             {
                 return false;
             }
