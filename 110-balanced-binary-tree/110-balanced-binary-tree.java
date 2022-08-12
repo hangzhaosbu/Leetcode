@@ -15,7 +15,6 @@
  */
 class Solution {
     
-    HashMap<TreeNode, Integer> hashmap = new HashMap<>();
     boolean result = true;
     
     private int dfs(TreeNode node)
@@ -24,12 +23,6 @@ class Solution {
         {
             return 0;
         }
-        
-        if(hashmap.containsKey(node))
-        {
-            return hashmap.get(node);
-        }
-        
         int left = dfs(node.left);
         int right = dfs(node.right);
         
@@ -39,7 +32,6 @@ class Solution {
         }
         
         int height = Math.max(left, right) + 1;
-        hashmap.put(node, height);
         return height;
         
     }
