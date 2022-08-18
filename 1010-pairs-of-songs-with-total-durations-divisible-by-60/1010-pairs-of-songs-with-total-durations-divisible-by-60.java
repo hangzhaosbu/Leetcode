@@ -23,7 +23,6 @@ class Solution {
                         result--;
                     }
                 }
-                
             }
         }
         
