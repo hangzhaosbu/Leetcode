@@ -1,31 +1,24 @@
 class Solution {
-    public int numPairsDivisibleBy60(int[] time)
-    {
-        HashMap<Integer, Integer> hashmap = new HashMap<>();
-        
-        long result = 0;
-        for(int i = 0; i < time.length; ++i)
-        {
-            hashmap.put(time[i], hashmap.getOrDefault(time[i], 0) + 1);
-        }
+    public int numPairsDivisibleBy60(int[] time) {
+        int[] remainders = new int[60];
+        int result = 0;
         
         for(int i = 0; i < time.length; ++i)
         {
-            for(int j = 0; j < 16; ++j)
+            int r = time[i] % 60;
+            
+            if(r == 0)
             {
-                int curt = (j + 1) * 60;
-                if(curt - time[i] >= 0 && hashmap.containsKey(curt - time[i]))
-                {
-                    result += hashmap.get(curt - time[i]);
-                    
-                    if(curt - time[i] == time[i])
-                    {
-                        result--;
-                    }
-                }
+                result+=remainders[0];
             }
+            else
+            {
+                result+=remainders[60 - r];
+            }
+            
+            remainders[r]++;
         }
         
-        return (int) (result/2);
+        return result;
     }
 }
