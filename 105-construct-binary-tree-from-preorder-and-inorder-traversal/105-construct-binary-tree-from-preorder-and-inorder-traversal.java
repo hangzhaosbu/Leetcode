@@ -15,33 +15,37 @@
  */
 class Solution {
     
-    private TreeNode BT(int left_p, int right_p, int left_i, int right_i, int[] preorder, int[] inorder)
+    private TreeNode recursion(int preorder_left, int preorder_right, int[] preorder, int inorder_left, int inorder_right, int[] inorder)
     {
-        if(left_p > right_p || left_i > right_i)
+        if(preorder_left > preorder_right || inorder_left > inorder_right)
         {
             return null;
         }
         
-        int index = 0;
-        TreeNode node = new TreeNode(preorder[left_p]);
+        int node_val = preorder[preorder_left];
+        int node_index = inorder_left;
         
-        for(int i = left_i; i <= right_i; ++i)
+        TreeNode node = new TreeNode(node_val);
+        
+        while(inorder[node_index] != node_val)
         {
-            if(preorder[left_p] == inorder[i])
-            {
-                index = i;
-                break;
-            }
+            node_index++;
         }
         
-        node.left = BT(left_p + 1, left_p + index - left_i, left_i, index - 1, preorder, inorder);
-        node.right = BT(left_p + 1 + index - left_i, right_p, index + 1, right_i, preorder, inorder);
+        int left_length = node_index - inorder_left;
+        int right_length = inorder_right - node_index;
+        
+        TreeNode left = recursion(preorder_left + 1, preorder_left + 1 + left_length, preorder, inorder_left, node_index - 1, inorder);
+        TreeNode right = recursion(preorder_left + 1 + left_length, preorder_left + 1 + left_length + right_length, preorder, node_index + 1, inorder_right, inorder);
+        
+        node.left = left;
+        node.right = right;
         
         return node;
     }
     
     public TreeNode buildTree(int[] preorder, int[] inorder)
     {
-        return BT(0, preorder.length - 1, 0, inorder.length - 1, preorder, inorder);
+        return recursion(0, preorder.length - 1, preorder, 0, inorder.length - 1, inorder);
     }
 }
