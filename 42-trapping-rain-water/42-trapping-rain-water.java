@@ -11,17 +11,20 @@ class Solution {
             if(left_height < right_height)
             {
                 result += Math.max(Math.min(max_left, max_right) - left_height, 0);
+                max_left = Math.max(max_left, left_height);
+                max_right = Math.max(max_right, right_height);
                 left++;
             }
             
             else
             {
                 result += Math.max(Math.min(max_left, max_right) - right_height, 0);
+                max_left = Math.max(max_left, left_height);
+                max_right = Math.max(max_right, right_height);
                 right--;
             }
             
-            max_left = Math.max(max_left, left_height);
-            max_right = Math.max(max_right, right_height);
+            
         }
         
         return result;
