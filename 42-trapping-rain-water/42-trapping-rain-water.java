@@ -7,8 +7,6 @@ class Solution {
         while(left <= right)
         {
             int left_height = height[left] , right_height = height[right];
-            max_left = Math.max(max_left, left_height);
-            max_right = Math.max(max_right, right_height);
             
             if(left_height < right_height)
             {
@@ -21,6 +19,9 @@ class Solution {
                 result += Math.max(Math.min(max_left, max_right) - right_height, 0);
                 right--;
             }
+            
+            max_left = Math.max(max_left, left_height);
+            max_right = Math.max(max_right, right_height);
         }
         
         return result;
