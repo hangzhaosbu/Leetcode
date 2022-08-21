@@ -20,20 +20,13 @@ class Solution {
         
         for(int i = 0; i < intervals.length; ++i)
         {
-            if(stack.isEmpty())
+            if(!stack.isEmpty() && stack.peek()[1] > intervals[i][0])
             {
-                stack.add(intervals[i]);
+                result++;
             }
             else
             {
-                if(stack.peek()[1] > intervals[i][0])
-                {
-                    result++;
-                }
-                else
-                {
-                    stack.add(intervals[i]);
-                }
+                stack.add(intervals[i]);
             }
         }
         
