@@ -96,12 +96,6 @@ class Solution {
         {
             count[p++] = new int[]{key, hashmap.get(key)};
         }
-        
-        // for(int key : hashmap.keySet())
-        // {
-        //     System.out.print(key + "," + hashmap.get(key) + "  ");
-        // }
-        
         return quickselect(0, hashmap.size() - 1, count, k);
     }
 }
