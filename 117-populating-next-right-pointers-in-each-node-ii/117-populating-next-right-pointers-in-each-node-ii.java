@@ -22,36 +22,50 @@ class Node {
 */
 
 class Solution {
-    public Node connect(Node root)
-    {
+    public Node connect(Node root) {
         if(root == null) return root;
         
-        Queue<Node> queue = new LinkedList<>();
+        Node curr = root;
+        Node head = null, prev = null;
         
-        queue.offer(root);
-        while(!queue.isEmpty())
+        while(curr != null)
         {
-            int size = queue.size();
-            for(int i = 0; i < size; ++i)
+            while(curr != null)
             {
-                Node node = queue.poll();
-                
-                if(i != size - 1)
+                if(curr.left != null)
                 {
-                    node.next = queue.peek();
+                    if(head == null)
+                    {
+                        head = curr.left;
+                        prev = curr.left;
+                    }
+                    else
+                    {
+                        prev.next = curr.left;
+                        prev = prev.next;
+                    }
                 }
                 
+                if(curr.right != null)
+                {
+                    if(head == null)
+                    {
+                        head = curr.right;
+                        prev = curr.right;
+                    }
+                    else
+                    {
+                        prev.next = curr.right;
+                        prev = prev.next;
+                    }
+                }
                 
-                if(node.left != null)
-                {
-                    queue.offer(node.left);
-                }
-
-                if(node.right != null)
-                {
-                    queue.offer(node.right);
-                }
+                curr = curr.next;
             }
+            
+            curr = head;
+            head = null;
+            prev = null;
         }
         
         return root;
