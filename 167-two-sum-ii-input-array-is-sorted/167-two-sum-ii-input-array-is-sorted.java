@@ -10,11 +10,10 @@ class Solution {
             {
                 left++;
             }
-            
-            else if(sum > target){
+            else if(sum > target)
+            {
                 right--;
             }
-            
             else
             {
                 return new int[]{left + 1, right + 1};
