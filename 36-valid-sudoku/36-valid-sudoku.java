@@ -1,32 +1,34 @@
 class Solution {
-    public boolean isValidSudoku(char[][] board) {
+    public boolean isValidSudoku(char[][] board)
+    {
         
-        // Each of the nine 3 x 3 sub-boxes of the grid must contain the digits 1-9 without repetition.
-        for(int i = 0; i < 9; i += 3)
+        // each 3*3 sub-matrix
+        for(int i = 0; i < 9; i+=3)
         {
-            for(int j = 0; j < 9; j += 3)
+            for(int j = 0; j < 9; j+=3)
             {
                 HashSet<Character> hashset = new HashSet<>();
-                for(int p = 0; p < 3; p++)
+                for(int p = 0; p < 3; ++p)
                 {
-                    for(int q = 0; q < 3; q++)
+                    for(int q = 0; q < 3; ++q)
                     {
-                        if(board[i + p][j + q] == '.') continue;
+                        if(board[p + i][q + j] == '.') continue;
                         
-                        if(!hashset.contains(board[i + p][j + q]))
-                        {
-                            hashset.add(board[i + p][j + q]);
-                        }
-                        else
+                        if(hashset.contains(board[p + i][q + j]))
                         {
                             return false;
                         }
+                        else
+                        {
+                            hashset.add(board[p + i][q + j]);
+                        }
+                        
                     }
                 }
             }
         }
         
-        // Each row must contain the digits 1-9 without repetition.
+        // each row
         for(int i = 0; i < 9; ++i)
         {
             HashSet<Character> hashset = new HashSet<>();
@@ -34,32 +36,35 @@ class Solution {
             {
                 if(board[i][j] == '.') continue;
                 
-                if(!hashset.contains(board[i][j]))
-                {
-                    hashset.add(board[i][j]);
-                }
-                else
+                if(hashset.contains(board[i][j]))
                 {
                     return false;
                 }
+                else
+                {
+                    hashset.add(board[i][j]);
+                }
+                
             }
         }
         
-        // Each column must contain the digits 1-9 without repetition.
+        // each column
         for(int j = 0; j < 9; ++j)
         {
             HashSet<Character> hashset = new HashSet<>();
             for(int i = 0; i < 9; ++i)
             {
+                
                 if(board[i][j] == '.') continue;
                 
-                if(!hashset.contains(board[i][j]))
-                {
-                    hashset.add(board[i][j]);
-                }
-                else
+                if(hashset.contains(board[i][j]))
                 {
                     return false;
+                }
+
+                else
+                {
+                    hashset.add(board[i][j]);
                 }
             }
         }
