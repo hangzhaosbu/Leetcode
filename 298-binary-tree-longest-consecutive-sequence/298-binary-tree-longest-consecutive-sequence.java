@@ -23,41 +23,30 @@ class Solution {
             return 0;
         }
         
-        dfs(root);
+        dfs(root, 0, root.val);
+        
         return result;
     }
     
-    private int[] dfs(TreeNode node)
+    private void dfs(TreeNode node, int length, int prev)
     {
         if(node == null)
         {
-            return new int[]{0, Integer.MAX_VALUE};
+            return;
         }
-
-        // 0: length, 1: prev node val
-        int[] left = dfs(node.left);
-        int[] right = dfs(node.right);
         
-        
-        if(node.val + 1 == left[1])
+        if(node.val - 1 == prev)
         {
-            left[0]++;
+            length ++;
         }
         else
         {
-            left[0] = 1;
+            length = 1;
         }
         
-        if(node.val + 1 == right[1])
-        {
-            right[0]++;
-        }
-        else
-        {
-            right[0] = 1;
-        }
+        result = Math.max(result, length);
         
-        result = Math.max(result, Math.max(left[0], right[0]));
-        return new int[]{Math.max(left[0], right[0]), node.val};
+        dfs(node.left, length, node.val);
+        dfs(node.right, length, node.val);
     }
 }
