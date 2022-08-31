@@ -24,52 +24,49 @@ class Solution {
         }
         
         dfs(root);
+        
         return result;
     }
     
     private int[] dfs(TreeNode node)
     {
-        if(node == null){
+        if(node == null)
+        {
             return new int[]{0, 0};
         }
         
-        // 0: increasing length, 1: decreasing length
         int[] left = dfs(node.left);
         int[] right = dfs(node.right);
         
-        if(node.left != null && node.val + 1 == node.left.val)
+        if(node.left != null && node.left.val + 1 == node.val)
         {
-            left[0] ++;
+            left[0]++;
         }
-        else
-        {
+        else{
             left[0] = 1;
         }
         
-        if(node.left != null && node.val - 1 == node.left.val)
+        if(node.left != null && node.left.val - 1 == node.val)
         {
-            left[1] ++;
+            left[1]++;
         }
-        else
-        {
+        else{
             left[1] = 1;
         }
         
-        if(node.right != null && node.val + 1 == node.right.val)
+        if(node.right != null && node.right.val + 1 == node.val)
         {
-            right[0] ++;
+            right[0]++;
         }
-        else
-        {
+        else{
             right[0] = 1;
         }
         
-        if(node.right != null && node.val - 1 == node.right.val)
+        if(node.right != null && node.right.val - 1 == node.val)
         {
-            right[1] ++;
+            right[1]++;
         }
-        else
-        {
+        else{
             right[1] = 1;
         }
         
@@ -77,3 +74,17 @@ class Solution {
         return new int[]{Math.max(left[0], right[0]), Math.max(left[1], right[1])};
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
