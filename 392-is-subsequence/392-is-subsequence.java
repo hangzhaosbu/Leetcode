@@ -14,13 +14,8 @@ class Solution {
             if(s.charAt(ps) == t.charAt(pt))
             {
                 ps++;
-                pt++;
             }
-            
-            else
-            {
-                pt++;
-            }
+            pt++;
         }
         
         return ps == s.length();
