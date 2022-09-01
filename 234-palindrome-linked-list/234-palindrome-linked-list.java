@@ -9,24 +9,42 @@
  * }
  */
 class Solution {
-    
-    ListNode first = null;
-    
     public boolean isPalindrome(ListNode head)
     {
-        first = head;
-        return recursion(head);
-    }
-    
-    private boolean recursion(ListNode node)
-    {
-        if(node != null)
+        ListNode slow = head, fast = head;
+        while(fast != null && fast.next != null)
         {
-            if(!recursion(node.next)) return false;
-            if(node.val != first.val) return false;
-            first = first.next;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        
+        ListNode prev = null;
+        int count = 0;
+        while(slow != null)
+        {
+            ListNode next = slow.next;
+            slow.next = prev;
+            prev = slow;
+            slow = next;
+            count++;
+        }
+        
+        while(count > 0)
+        {
+            count--;
+            if(head.val == prev.val)
+            {
+                head = head.next;
+                prev = prev.next;
+            }
+            else
+            {
+                return false;
+            }
         }
         
         return true;
+        
+        
     }
 }
