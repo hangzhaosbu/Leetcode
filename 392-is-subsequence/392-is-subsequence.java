@@ -18,6 +18,6 @@ class Solution {
             pt++;
         }
         
-        return ps == s.length();
+        return ps > s.length() - 1;
     }
 }
