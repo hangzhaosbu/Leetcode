@@ -3,13 +3,20 @@ class Solution {
     {
         int ps = 0, pt = 0;
         
-        while(pt < t.length())
+        while(ps < s.length())
         {
-            if(ps < s.length() && pt < t.length() && s.charAt(ps) == t.charAt(pt))
+            
+            if(pt >= t.length())
+            {
+                break;
+            }
+            
+            if(s.charAt(ps) == t.charAt(pt))
             {
                 ps++;
                 pt++;
             }
+            
             else
             {
                 pt++;
