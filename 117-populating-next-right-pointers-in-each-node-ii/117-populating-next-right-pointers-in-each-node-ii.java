@@ -22,48 +22,49 @@ class Node {
 */
 
 class Solution {
-    public Node connect(Node root) {
-        if(root == null) return root;
+    public Node connect(Node root)
+    {
+        if(root == null) return null;
         
-        Node curr = root;
+        Node curt = root;
         Node head = null, prev = null;
         
-        while(curr != null)
+        while(curt != null)
         {
-            while(curr != null)
+            while(curt != null)
             {
-                if(curr.left != null)
+                if(curt.left != null)
                 {
                     if(head == null)
                     {
-                        head = curr.left;
-                        prev = curr.left;
+                        head = curt.left;
+                        prev = head;
                     }
                     else
                     {
-                        prev.next = curr.left;
+                        prev.next = curt.left;
                         prev = prev.next;
                     }
                 }
                 
-                if(curr.right != null)
+                if(curt.right != null)
                 {
                     if(head == null)
                     {
-                        head = curr.right;
-                        prev = curr.right;
+                        head = curt.right;
+                        prev = head;
                     }
                     else
                     {
-                        prev.next = curr.right;
+                        prev.next = curt.right;
                         prev = prev.next;
                     }
                 }
                 
-                curr = curr.next;
+                curt = curt.next;
             }
             
-            curr = head;
+            curt = head;
             head = null;
             prev = null;
         }
