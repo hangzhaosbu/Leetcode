@@ -1,5 +1,6 @@
 class Solution {
-    public int maxEvents(int[][] events) {
+    public int maxEvents(int[][] events)
+    {
         Arrays.sort(events, new Comparator<>(){
             public int compare(int[] a, int[] b)
             {
@@ -14,30 +15,30 @@ class Solution {
             }
         });
         
+        
         PriorityQueue<Integer> pq = new PriorityQueue<>();
-        int i = 0, N = events.length, result = 0;
+        int i = 0, N = events.length, count = 0;
         
-        
-        for(int day = 1; day <= 100000; day++)
+        for(int days = 0; days <= 100000; ++days)
         {
-            while(i < N && events[i][0] <= day)
+            while(i < N && events[i][0] <= days)
             {
                 pq.offer(events[i][1]);
                 i++;
             }
             
-            while(!pq.isEmpty() && pq.peek() < day)
+            while(!pq.isEmpty() && pq.peek() < days)
             {
                 pq.poll();
             }
             
             if(!pq.isEmpty())
             {
+                count++;
                 pq.poll();
-                result++;
             }
         }
         
-        return result;
+        return count;
     }
 }
