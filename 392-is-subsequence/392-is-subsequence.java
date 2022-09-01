@@ -1,23 +1,50 @@
 class Solution {
-    public boolean isSubsequence(String s, String t)
-    {
-        int ps = 0, pt = 0;
+    public boolean isSubsequence(String s, String t) {
+        HashMap<Character, List<Integer>> position = new HashMap<>();
         
-        while(ps < s.length())
+        for(int i = 0; i < t.length(); ++i)
         {
+            char c = t.charAt(i);
             
-            if(pt >= t.length())
+            if(position.containsKey(c))
             {
-                break;
+                position.get(c).add(i);
             }
-            
-            if(s.charAt(ps) == t.charAt(pt))
+            else
             {
-                ps++;
+                List<Integer> curt = new ArrayList<>();
+                curt.add(i);
+                position.put(c, curt);
             }
-            pt++;
         }
         
-        return ps > s.length() - 1;
+        
+        int index = -1;
+        
+        for(int i = 0; i < s.length(); ++i)
+        {
+            char c = s.charAt(i);
+            
+            if(!position.containsKey(c))
+            {
+                return false;
+            }
+            
+            boolean flag = false;
+            
+            for(int j = 0; j < position.get(c).size(); ++j)
+            {
+                if(index < position.get(c).get(j))
+                {
+                    index = position.get(c).get(j);
+                    flag = true;
+                    break;
+                }
+            }
+            
+            if(!flag) return false;
+        }
+        
+        return true;
     }
 }
