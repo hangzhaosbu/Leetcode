@@ -6,8 +6,8 @@ class Solution {
         
         for(int i = (int) Math.pow(2, N); i < (int) Math.pow(2, N + 1); ++i)
         {
-            String all = Integer.toBinaryString(i);
-            String s = all.substring(1, all.length());
+            // String all = Integer.toBinaryString(i);
+            String s = Integer.toBinaryString(i).substring(1, Integer.toBinaryString(i).length());
             
             List<Integer> result = new ArrayList<>();
             
