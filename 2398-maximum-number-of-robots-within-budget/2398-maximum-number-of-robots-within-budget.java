@@ -17,6 +17,7 @@ class Solution {
             right ++;
             
             
+            // "if" keep the max length
             if(!deque.isEmpty() && (right - left) * curt + chargeTimes[deque.getFirst()] > budget){
                 curt -= runningCosts[left];
                 
