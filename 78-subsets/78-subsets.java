@@ -1,26 +1,32 @@
 class Solution {
+    Set<List<Integer>> results = new HashSet<>();
+    
     public List<List<Integer>> subsets(int[] nums)
     {
-        int N = nums.length;
-        List<List<Integer>> results = new ArrayList<>();
-        
-        for(int i = (int) Math.pow(2, N); i < (int) Math.pow(2, N + 1); ++i)
+        dfs(0, nums, new HashSet<>(), new ArrayList<>());
+        return new ArrayList<>(results);
+    }
+    
+    private void dfs(int start, int[] nums, HashSet<Integer> hashset, List<Integer> result)
+    {
+        if(!results.contains(result))
         {
-            // String all = Integer.toBinaryString(i);
-            String s = Integer.toBinaryString(i).substring(1, Integer.toBinaryString(i).length());
-            
-            List<Integer> result = new ArrayList<>();
-            
-            for(int j = 0; j < s.length(); ++j)
-            {
-                if(s.charAt(j) == '1'){
-                    result.add(nums[j]);
-                }
-            }
-            
-            results.add(result);
+            results.add(new ArrayList<>(result));
         }
         
-        return results;
+        int N = nums.length;
+        for(int i = start; i < N; ++i)
+        {
+            if(!hashset.contains(i))
+            {
+                hashset.add(i);
+                result.add(nums[i]);
+                
+                dfs(i, nums, hashset, result);
+                
+                result.remove(result.size() - 1);
+                hashset.remove(i);
+            }
+        }
     }
 }
