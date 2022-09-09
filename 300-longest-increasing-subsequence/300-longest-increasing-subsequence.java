@@ -1,24 +1,33 @@
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        int N = nums.length;
-        int[] dp = new int[N];
-        int result = 1;
+        //[2,3,7,18]
         
-        Arrays.fill(dp, 1);
+        List<Integer> LIS = new ArrayList<>();
         
-        for(int i = 0; i < N - 1; ++i)
+        for(int i = 0; i < nums.length; ++i)
         {
-            for(int j = i + 1; j < N; ++j)
+            int curt = nums[i];
+            
+            int index = Collections.binarySearch(LIS, curt);
+            if(index < 0)
             {
-                if(nums[j] > nums[i])
+                index = - (index + 1);
+            }
+            
+            // System.out.println(index);
+            if(index == LIS.size())
+            {
+                LIS.add(curt);
+            }
+            else if(index < LIS.size())
+            {
+                if(LIS.get(index) > curt)
                 {
-                    dp[j] = Math.max(dp[j], dp[i] + 1);
+                    LIS.set(index, curt);
                 }
-                
-                result = Math.max(result, dp[j]);
             }
         }
         
-        return result;
+        return LIS.size();
     }
 }
