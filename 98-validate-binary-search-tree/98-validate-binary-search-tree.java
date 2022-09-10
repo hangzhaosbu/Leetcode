@@ -14,18 +14,18 @@
  * }
  */
 class Solution {
+    public boolean isValidBST(TreeNode root)
+    {
+        return dfs(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
     
-    private boolean valid(long left, long right, TreeNode node)
+    private boolean dfs(TreeNode node, long left, long right)
     {
         if(node == null)
         {
             return true;
         }
-        return node.val > left && node.val < right && valid(left, (long) node.val, node.left) && valid((long) node.val, right, node.right);
-    }
-    
-    public boolean isValidBST(TreeNode root)
-    {
-        return valid(Long.MIN_VALUE, Long.MAX_VALUE, root);
+        
+        return node.val > left && node.val < right && dfs(node.left, left, node.val) && dfs(node.right, node.val, right);
     }
 }
