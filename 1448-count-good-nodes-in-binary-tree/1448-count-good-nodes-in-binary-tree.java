@@ -13,52 +13,28 @@
  *     }
  * }
  */
-class Pair<TreeNode, Integer>{
-    TreeNode first;
-    Integer second;
-    
-    public Pair(TreeNode first, Integer second)
-    {
-        this.first = first;
-        this.second = second;
-    }
-}
-
 class Solution {
+    int result = 0;
+    
     public int goodNodes(TreeNode root)
     {
-        int count = 1;
-        Queue<Pair<TreeNode, Integer>> queue = new LinkedList<>();
+        dfs(root, root.val);
         
-        queue.offer(new Pair<>(root, root.val));
+        return result;
+    }
+    
+    private void dfs(TreeNode node, int max_sofar)
+    {
         
-        while(!queue.isEmpty())
+        if(node.val >= max_sofar)
         {
-            Pair<TreeNode, Integer> pair = queue.poll();
-            TreeNode node = pair.first;
-            int max = pair.second;
-            
-            if(node.left != null)
-            {
-                int new_max = Math.max(max, node.left.val);
-                if(new_max <= node.left.val)
-                {
-                    count++;
-                }
-                queue.offer(new Pair<>(node.left, new_max));
-            }
-            
-            if(node.right != null)
-            {
-                int new_max = Math.max(max, node.right.val);
-                if(new_max <= node.right.val)
-                {
-                    count++;
-                }
-                queue.offer(new Pair<>(node.right, new_max));
-            }
+            result++;
         }
         
-        return count;
+        if(node.left != null)
+            dfs(node.left, Math.max(max_sofar, node.left.val));
+        
+        if(node.right != null)
+            dfs(node.right, Math.max(max_sofar, node.right.val));
     }
 }
