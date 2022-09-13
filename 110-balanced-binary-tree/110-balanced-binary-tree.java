@@ -14,8 +14,14 @@
  * }
  */
 class Solution {
-    
     boolean result = true;
+    
+    public boolean isBalanced(TreeNode root)
+    {
+        dfs(root);
+        
+        return result;
+    }
     
     private int dfs(TreeNode node)
     {
@@ -23,22 +29,15 @@ class Solution {
         {
             return 0;
         }
+        
         int left = dfs(node.left);
         int right = dfs(node.right);
         
-        if(left - right > 1 || right - left > 1)
+        if(Math.abs(left - right) > 1)
         {
             result = false;
         }
         
-        int height = Math.max(left, right) + 1;
-        return height;
-        
-    }
-    
-    public boolean isBalanced(TreeNode root)
-    {
-        dfs(root);
-        return result;
+        return Math.max(left, right) + 1;
     }
 }
