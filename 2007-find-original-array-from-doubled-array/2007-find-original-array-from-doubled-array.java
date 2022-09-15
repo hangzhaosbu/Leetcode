@@ -18,22 +18,11 @@ class Solution {
         
         for(int i = nums.length - 1; i >= 0; --i)
         {
-            //,,,,2,1
             if(!hashmap.containsKey(nums[i])){
                 continue;
             }
                
-            if(!hashmap.containsKey(nums[i]/2))
-            {
-                return new int[]{};
-            }
-            
-            if(nums[i]/2 == nums[i] && hashmap.get(nums[i]) == 1)
-            {
-                return new int[]{};
-            }
-            
-            if(hashmap.get(nums[i]) > 0 && nums[i]%2 ==1)
+            if((!hashmap.containsKey(nums[i]/2)) || (nums[i]/2 == nums[i] && hashmap.get(nums[i]) == 1) || (hashmap.get(nums[i]) > 0 && nums[i] % 2 == 1))
             {
                 return new int[]{};
             }
