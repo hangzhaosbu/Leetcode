@@ -1,7 +1,8 @@
 class Solution {
 public:
     char nextGreatestLetter(vector<char>& letters, char target) {
-        auto it = upper_bound(letters.begin(), letters.end(), target);
-        return it == letters.end() ? letters[0] : *it;
+        auto begin = letters.begin(), end = letters.end();
+        auto iter = upper_bound(begin, end, target);
+        return iter != end ? *iter : *begin;
     }
 };
