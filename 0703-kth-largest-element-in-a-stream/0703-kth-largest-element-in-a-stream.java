@@ -3,12 +3,7 @@ class KthLargest {
     
     int k;
     public KthLargest(int k, int[] nums) {
-        this.pq = new PriorityQueue<>(new Comparator<Integer>(){
-            public int compare(Integer num1, Integer num2)
-            {
-                return num1 - num2;
-            }
-        });
+        this.pq = new PriorityQueue<>();
         this.k = k;
         
         for(int num : nums) 
