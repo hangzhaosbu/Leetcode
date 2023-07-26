@@ -5,7 +5,7 @@ class Q {
     private int size;
     
     public Q(){
-        N = (int) 1e5 + 5;
+        N = (int) 1e4 + 5;
         arr = new int[N][2];
         front = 0;
         back = 0;
@@ -71,7 +71,6 @@ class Solution {
         for(Map.Entry<Character, Integer> entry : map.entrySet())
         {
             pq.offer(entry.getValue());
-            // System.out.println(entry.getKey() + ":" + entry.getValue());
         }
         
         
