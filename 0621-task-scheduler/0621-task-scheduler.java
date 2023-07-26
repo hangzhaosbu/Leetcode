@@ -5,7 +5,7 @@ class Q {
     private int size;
     
     public Q(){
-        N = (int) 1e4 + 5;
+        N = (int) 1e4 + 1;
         arr = new int[N][2];
         front = 0;
         back = 0;
