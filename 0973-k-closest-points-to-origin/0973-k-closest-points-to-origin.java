@@ -28,7 +28,7 @@ class Solution {
             pq.add(new Point(points[i][0],points[i][1],d));
             if(pq.size() > k)
             {
-                pq.poll();
+                pq.remove();
             }
         }
 
