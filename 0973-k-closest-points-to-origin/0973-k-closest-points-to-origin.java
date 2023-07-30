@@ -36,7 +36,8 @@ class Solution {
         for(int i = 0; i < k; i++){
             Point point=pq.remove();
 
-            ans[i] = new int[]{point.x , point.y};
+            ans[i][0] = point.x;
+            ans[i][1] = point.y;
         }
 
         return ans;
