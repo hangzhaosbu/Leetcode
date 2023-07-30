@@ -12,7 +12,7 @@ class Solution {
         }
 
         public int compareTo(Point Point2){
-            return this.d - Point2.d;
+            return -this.d + Point2.d;
            
         }
 
@@ -26,6 +26,10 @@ class Solution {
 
             int d = (points[i][0] * points[i][0])     +    (points[i][1] * points[i][1]) ;
             pq.add(new Point(points[i][0],points[i][1],d));
+            if(pq.size() > k)
+            {
+                pq.poll();
+            }
         }
 
 
