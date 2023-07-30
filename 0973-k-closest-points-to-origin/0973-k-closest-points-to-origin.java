@@ -1,43 +1,40 @@
 class Solution {
-    private int distance(int x1, int y1, int x2, int y2)
-    {
-        return (x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2);
+    public class Point implements Comparable<Point>{
+        int x;
+        int y;
+        int d;
+
+        public Point(int x, int y, int d){
+            this.x=x;
+            this.y=y;
+            this.d=d;
+
+        }
+
+        public int compareTo(Point Point2){
+            return this.d - Point2.d;
+           
+        }
+
     }
-    
-    public int[][] kClosest(int[][] points, int k)
-    {
-        PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator<int[]>(){
-            public int compare(int[] a, int[] b)
-            {
-                return b[0] - a[0];
-            }
-        });
-        
-        for(int[] point : points)
-        {
-            int x = point[0], y = point[1];
-            int dis = distance(x, y, 0, 0);
-            
-            pq.offer(new int[]{dis, x, y});
-            
-            if(pq.size() > k)
-            {
-                pq.poll();
-            }
+   
+    public int[][] kClosest(int[][] points, int k) {
+        PriorityQueue<Point> pq=new PriorityQueue<>();
+        int[][] ans=new int[k][2];
+
+        for(int i = 0; i < points.length; i++){
+
+            int d = (points[i][0] * points[i][0])     +    (points[i][1] * points[i][1]) ;
+            pq.add(new Point(points[i][0],points[i][1],d));
         }
-        
-        int[][] result = new int[k][2];
-        int p = 0;
-        
-        
-        while(!pq.isEmpty())
-        {
-            int[] curt = pq.poll();
-            
-            result[p][0] = curt[1];
-            result[p++][1] = curt[2];
+
+
+        for(int i = 0; i < k; i++){
+            Point point=pq.remove();
+
+            ans[i] = new int[]{point.x , point.y};
         }
-        
-        return result;
+
+        return ans;
     }
 }
