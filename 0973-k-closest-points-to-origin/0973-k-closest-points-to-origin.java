@@ -1,8 +1,8 @@
 class Solution {
     public class Point implements Comparable<Point>{
-        int x;
-        int y;
-        int d;
+        private int x;
+        private int y;
+        private int d;
 
         public Point(int x, int y, int d){
             this.x=x;
@@ -13,7 +13,16 @@ class Solution {
 
         public int compareTo(Point Point2){
             return -this.d + Point2.d;
-           
+        }
+        
+        public int getX()
+        {
+            return this.x;
+        }
+        
+        public int getY()
+        {
+            return this.y;
         }
 
     }
@@ -26,18 +35,15 @@ class Solution {
 
             int d = (points[i][0] * points[i][0])     +    (points[i][1] * points[i][1]) ;
             pq.add(new Point(points[i][0],points[i][1],d));
-            if(pq.size() > k)
-            {
-                pq.remove();
-            }
+            if(pq.size() > k) pq.remove();
         }
 
 
         for(int i = 0; i < k; i++){
             Point point=pq.remove();
 
-            ans[i][0] = point.x;
-            ans[i][1] = point.y;
+            ans[i][0] = point.getX();
+            ans[i][1] = point.getY();
         }
 
         return ans;
