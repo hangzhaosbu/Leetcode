@@ -1,12 +1,10 @@
 class TrieNode 
 {
-    int val;
     TrieNode[] children;
     boolean isWord;
     
     public TrieNode()
     {
-        this.val = 0;
         this.children = new TrieNode[26];
         this.isWord = false;
     }
@@ -33,14 +31,9 @@ class WordDictionary {
         node.isWord = true;
     }
     
-    public boolean search(String word) {
-        TrieNode node = root;
-        return dfs(0, node, word);
-    }
-    
-    private boolean dfs(int j, TrieNode root, String word)
+    private boolean dfs(int j, TrieNode curt, String word)
     {
-        TrieNode node = root;
+        TrieNode node = curt;
         for(int i = j; i < word.length(); i++)
         {
             char c = word.charAt(i);
@@ -48,22 +41,21 @@ class WordDictionary {
             {
                 for(int k = 0; k < 26; k++)
                 {
-                    if(node.children[k] != null && dfs(i + 1, node.children[k], word))
-                    {
-                        return true;
-                    }
+                    if(node.children[k] != null && dfs(i + 1, node.children[k], word)) return true;
                 }
-                
                 return false;
             }
-            else if(node.children[c - 'a'] == null)
-            {
-                return false;
-            }
+            else if(node.children[c - 'a'] == null) return false;
+            
             node = node.children[c - 'a'];
         }
         
         return node.isWord;
+    }
+    
+    public boolean search(String word) {
+        TrieNode node = root;
+        return dfs(0, node, word);
     }
 }
 
