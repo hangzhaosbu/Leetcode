@@ -1,12 +1,10 @@
 class TrieNode 
 {
-    int val;
     TrieNode[] children;
     boolean isWord;
     
     public TrieNode()
     {
-        this.val = 0;
         this.children = new TrieNode[26];
         this.isWord = false;
     }
