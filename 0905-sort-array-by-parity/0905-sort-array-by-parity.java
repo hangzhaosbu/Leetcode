@@ -4,8 +4,8 @@ class Solution {
         
         while(left < right)
         {
-            while(left < right && nums[left] % 2 == 0) left++;
-            while(left < right && nums[right] % 2 == 1) right--;
+            while(left < right && nums[left] % 2 < 1) left++;
+            while(left < right && nums[right] % 2 > 0) right--;
             
             int temp = nums[left];
             nums[left] = nums[right];
