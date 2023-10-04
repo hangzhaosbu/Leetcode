@@ -1,28 +1,24 @@
 class Solution {
 public:
-    void dfs(int start, vector<int>& nums, vector<int>& result, vector<vector<int>>& results, int k)
-    {
-        if(result.size() == k)
-        {
-            results.push_back(result);
-            return;
-        }
-        
-        for(int i = start; i < nums.size(); i++)
-        {
-            result.push_back(nums[i]);
-            dfs(i + 1, nums, result, results, k);
-            result.pop_back();
-        }
-    }
-    
-    vector<vector<int>> subsets(vector<int>& nums)
-    {
+    vector<vector<int>> subsets(vector<int>& nums) {
+        int N = nums.size();
         vector<vector<int>> results;
-        vector<int> result;
         
-        for(int k = 0; k <= nums.size(); k++)
-            dfs(0, nums, result, results, k);
+        for(int i = pow(2, N); i < pow(2, N + 1); i++)
+        {
+            string curt = bitset<11>(i).to_string().substr(11 - N);
+            vector<int> result;
+            
+            for(int j = 0; j < curt.length(); j++)
+            {
+                if(curt[j] == '1')
+                {
+                    result.push_back(nums[j]);
+                }
+            }
+            
+            results.push_back(result);
+        }
         return results;
     }
 };
