@@ -1,8 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
-        vector<vector<int>> results;
-        set<vector<int>> used;
+        set<vector<int>> ans;
         sort(nums.begin(), nums.end());
         int n = nums.size();
         for(int i = pow(2, n); i < pow(2, n + 1); i++)
@@ -14,13 +13,12 @@ public:
             {
                 if(s[i] == '1') result.push_back(nums[i]);
             }
-            if(used.find(result) == used.end())
+            if(ans.find(result) == ans.end())
             {
-                results.push_back(result);
-                used.insert(result);
+                ans.insert(result);
             }
         }
         
-        return results;
+        return vector<vector<int>>(ans.begin(), ans.end());
     }
 };
