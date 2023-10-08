@@ -6,7 +6,7 @@ public:
         int n = nums.size();
         for(int i = pow(2, n); i < pow(2, n + 1); i++)
         {
-            string s = bitset<11>(i).to_string().substr(11 - n);
+            string s = bitset<10>(i).to_string().substr(10 - n);
             vector<int> result;
             
             for(int i = 0; i < n; i++)
