@@ -14,13 +14,11 @@ public:
             {
                 if(s[i] == '1') result.push_back(nums[i]);
             }
-            // cout << s << endl;
             if(used.find(result) == used.end())
             {
                 results.push_back(result);
                 used.insert(result);
             }
-            // results.push_back(result);
         }
         
         return results;
