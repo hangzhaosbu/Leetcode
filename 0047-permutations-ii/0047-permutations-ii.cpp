@@ -2,7 +2,7 @@ class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums)
     {
-        set<vector<int>> results;
+        vector<vector<int>> results;
         vector<int> result;
         int n = nums.size();
         bool used[n];
@@ -12,21 +12,21 @@ public:
         sort(nums.begin(), nums.end());
         
         dfs(n, used, nums, result, results);
-        return vector<vector<int>>(results.begin(), results.end());
+        return results;
     }
     
-    void dfs(int n, bool used[], vector<int>& nums, vector<int>& result, set<vector<int>>& results)
+    void dfs(int n, bool used[], vector<int>& nums, vector<int>& result, vector<vector<int>>& results)
     {
-        if(result.size() == n && results.find(result) == results.end())
+        if(result.size() == n)
         {
-            results.insert(result);
+            results.push_back(result);
             return;
         }
         
         for(int i = 0; i < n; i++)
         {
             if(used[i]) continue;
-            // if(i > 0 && nums[i] == nums[i - 1]) continue;
+            if(i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) continue;
             
             result.push_back(nums[i]);
             used[i] = true;
