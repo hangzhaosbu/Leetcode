@@ -12,21 +12,21 @@
 <p>Since the answer&nbsp;may be too large,&nbsp;return it modulo <code>10^9 + 7.</code></p>
 
 <p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+<p><strong class="example">Example 1:</strong></p>
 
 <pre><strong>Input:</strong> n = 1
 <strong>Output:</strong> 5
 <strong>Explanation:</strong> All possible strings are: "a", "e", "i" , "o" and "u".
 </pre>
 
-<p><strong>Example 2:</strong></p>
+<p><strong class="example">Example 2:</strong></p>
 
 <pre><strong>Input:</strong> n = 2
 <strong>Output:</strong> 10
 <strong>Explanation:</strong> All possible strings are: "ae", "ea", "ei", "ia", "ie", "io", "iu", "oi", "ou" and "ua".
 </pre>
 
-<p><strong>Example 3:&nbsp;</strong></p>
+<p><strong class="example">Example 3:&nbsp;</strong></p>
 
 <pre><strong>Input:</strong> n = 5
 <strong>Output:</strong> 68</pre>
