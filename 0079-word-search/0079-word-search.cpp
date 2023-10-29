@@ -34,6 +34,7 @@ public:
             return false;
         }
         
+        if(target.find(curt) != 0) return false;
         
         
         for(auto direction : directions)
