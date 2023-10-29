@@ -14,7 +14,7 @@ public:
                 if(board[i][j] == word[0])
                 {
                     visited[i][j] = true;
-                    ans |= dfs(i, j, n, m, 1, word.substr(0,1), word, board, visited);
+                    ans |= dfs(i, j, n, m, 1, word.length(), word.substr(0,1), word, board, visited);
                     visited[i][j] = false;
                 }
             }
@@ -23,9 +23,9 @@ public:
         return ans;
     }
     
-    bool dfs(int x, int y, int n, int m, int start, string curt, string target, vector<vector<char>>& board, vector<vector<bool>>& visited)
+    bool dfs(int x, int y, int n, int m, int start, int size, string curt, string target, vector<vector<char>>& board, vector<vector<bool>>& visited)
     {
-        if(curt.length() == target.length())
+        if(start == size)
         {
             if(curt == target)
             {
@@ -46,7 +46,7 @@ public:
             {
                 visited[new_x][new_y] = true;
                 curt += board[new_x][new_y];
-                if(dfs(new_x, new_y, n, m, start + 1, curt, target, board, visited)) return true;
+                if(dfs(new_x, new_y, n, m, start + 1, size, curt, target, board, visited)) return true;
                 curt = curt.substr(0, curt.length() - 1);
                 visited[new_x][new_y] = false;
             }
