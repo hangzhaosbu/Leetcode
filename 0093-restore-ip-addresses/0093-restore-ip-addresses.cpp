@@ -6,7 +6,8 @@ public:
     {
         // cout << s << endl;
         if(s.size() == 0 || s.size() > 3 || (s.size() > 1 && s[0] == '0')) return false;
-        if(stoi(s) < 0 || stoi(s) > 255) return false;
+        int n = stoi(s);
+        if(n < 0 || n > 255) return false;
         return true;
     }
     
@@ -22,9 +23,7 @@ public:
         {
             if(valid(s.substr(start, i - start + 1)))
             {
-                curt += s.substr(start, i - start + 1) + ".";
-                dfs(i + 1, dots + 1, size, s, curt, results);
-                curt = curt.substr(0, curt.length() - (i - start + 2));
+                dfs(i + 1, dots + 1, size, s, curt + s.substr(start, i - start + 1) + ".", results);
             }
         }
     }
