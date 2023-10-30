@@ -21,9 +21,10 @@ public:
         
         for(int i = start; i < size; i++)
         {
-            if(valid(s.substr(start, i - start + 1)))
+            string c = s.substr(start, i - start + 1);
+            if(valid(c))
             {
-                dfs(i + 1, dots + 1, size, s, curt + s.substr(start, i - start + 1) + ".", results);
+                dfs(i + 1, dots + 1, size, s, curt + c + ".", results);
             }
         }
     }
