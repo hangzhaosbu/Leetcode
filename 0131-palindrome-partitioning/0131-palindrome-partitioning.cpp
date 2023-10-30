@@ -5,15 +5,8 @@ public:
         int l = 0, r = s.length() - 1;
         while(l < r)
         {
-            if(s[l] == s[r])
-            {
-                l++;
-                r--;
-            }
-            else
-            {
-                return false;
-            }
+            if(s[l++] == s[r--]);
+            else return false;
         }
         return true;
     }
