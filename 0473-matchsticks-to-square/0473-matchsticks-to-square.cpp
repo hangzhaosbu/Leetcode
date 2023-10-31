@@ -23,6 +23,8 @@ public:
         for(int i = 0; i < 4; i++)
         {
             if(matchsticks[i] + A[start] > goal) continue;
+            if(i > 0 && matchsticks[i] == matchsticks[i - 1]) continue;
+            
             matchsticks[i] += A[start];
             if(dfs(start + 1, goal, A, matchsticks)) return true;;
             matchsticks[i] -= A[start];
