@@ -16,7 +16,7 @@ public:
         if(total % k != 0) return false;
         vector<int> result(k, 0);
         
-        // sort(nums.begin(), nums.end());
+        sort(nums.begin(), nums.end(), greater<int>());
         return dfs(0, k, total / k, nums, result);
     }
     
