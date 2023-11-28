@@ -40,7 +40,6 @@ public:
             maxTotalRight = max(maxTotalRight, totalRight);
         }
         
-        // cout << left << "," << right << ", " << leftMax << " " << rightMax << " " << totalLeft + totalRight << endl;
         return max(leftMax, max(rightMax, maxTotalLeft + maxTotalRight));
     }
 };
