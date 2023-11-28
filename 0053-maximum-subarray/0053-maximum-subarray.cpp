@@ -4,12 +4,9 @@ public:
         int sum = 0;
         int ans = INT_MIN;
         
-        for(int i = 0 ; i < nums.size(); i++)
+        for(auto & num : nums)
         {
-            sum += nums[i];
-            
-            if(sum < nums[i]) sum = nums[i];
-            
+            sum = sum + num < num ? num : sum + num;
             ans = max(ans, sum);
         }
         
