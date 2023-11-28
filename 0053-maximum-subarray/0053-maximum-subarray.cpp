@@ -6,7 +6,7 @@ public:
         
         for(auto & num : nums)
         {
-            sum = sum + num < num ? num : sum + num;
+            sum = sum < 0 ? num : sum + num;
             ans = max(ans, sum);
         }
         
