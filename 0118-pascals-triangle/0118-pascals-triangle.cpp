@@ -4,10 +4,8 @@ public:
         vector<vector<int>> ans;
         
         ans.push_back({1});
-        if(N == 1) return ans;
-        ans.push_back({1,1});
         
-        for(int i = 0; i < N - 2; i++)
+        for(int i = 0; i < N - 1; i++)
         {
             int m = ans.size() - 1;
             
