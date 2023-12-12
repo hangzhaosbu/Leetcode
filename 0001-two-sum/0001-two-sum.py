@@ -8,4 +8,5 @@ class Solution:
                 return [hashmap[target - nums[i]], i]
             
             hashmap[nums[i]] = i
+        
         return [-1,-1]
