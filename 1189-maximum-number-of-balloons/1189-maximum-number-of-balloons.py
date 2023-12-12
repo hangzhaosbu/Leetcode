@@ -6,8 +6,11 @@ class Solution:
             hashmap[c] = 0
         
         for c in text:
-            hashmap[c] = hashmap.get(c, 0) + 1
-        
+            if c not in hashmap:
+                hashmap[c] = 1
+            else:
+                hashmap[c] += 1
+            
         count = 0
         
         while True:
