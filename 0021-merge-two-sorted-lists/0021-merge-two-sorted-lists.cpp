@@ -11,8 +11,8 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-        ListNode dummy(0, nullptr);
-        ListNode* cursor = &dummy;
+        ListNode* dummy = new ListNode(0);
+        ListNode* cursor = dummy;
         
         while(list1 != nullptr && list2 != nullptr)
         {
@@ -29,20 +29,10 @@ public:
             cursor = cursor->next;
         }
         
-        while(list1 != nullptr)
-        {
-            cursor->next = list1;
-            list1 = list1->next;
-            cursor = cursor->next;
-        }
+        if(list1 != nullptr) cursor->next = list1;
         
-        while(list2 != nullptr)
-        {
-            cursor->next = list2;
-            list2 = list2->next;
-            cursor = cursor->next;
-        }
+        if(list2 != nullptr) cursor->next = list2;
         
-        return dummy.next;
+        return dummy->next;
     }
 };
