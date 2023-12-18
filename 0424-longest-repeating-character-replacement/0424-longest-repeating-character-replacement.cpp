@@ -1,26 +1,25 @@
 class Solution {
 public:
+    int chars[26];
     int characterReplacement(string s, int k) {
-        int ans = 0;
-        int N = s.length();
+        int i = 0, j = 0, N = s.length(), ans = 0, maxfreq = 0;
         
-        for(char c = 'A'; c <= 'Z'; c++)
+        while(i < N)
         {
-            int i = 0, j = 0;
+            chars[s[i] - 'A']++;
             
-            while(i < N)
+            maxfreq = max(maxfreq, chars[s[i] - 'A']);
+            
+            bool valid = (i - j + 1 - maxfreq <= k);
+            
+            if(!valid)
             {
-                while(j < N && (s[j] == c || s[j] != c && k > 0))
-                {
-                    k -= s[j] != c;
-                    j++;
-                }
-                
-                ans = max(ans, j - i);
-                
-                k += s[i] != c;
-                i++;
+                chars[s[j] - 'A']--;
+                j++;
             }
+            
+            ans = max(ans, i - j + 1);
+            i++;
         }
         
         return ans;
