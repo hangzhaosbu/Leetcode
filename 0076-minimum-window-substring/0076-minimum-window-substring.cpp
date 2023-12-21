@@ -1,11 +1,11 @@
 class Solution {
 public:
-    int countS[256];
-    int countT[256];
+    int countS[60];
+    int countT[60];
     string minWindow(string s, string t) {
         for(auto& c : t)
         {
-            countT[(int) c]++;
+            countT[c - 'A']++;
         }
         
         int i = 0, j = 0, N = s.length();
@@ -15,7 +15,7 @@ public:
         {
             while(j < N && !valid())
             {
-                countS[(int) s[j]]++;
+                countS[s[j] - 'A']++;
                 j++;
             }
             
@@ -26,7 +26,7 @@ public:
                 end = j;
             }
             
-            countS[(int) s[i]]--;
+            countS[s[i] - 'A']--;
             i++;
         }
         
@@ -35,7 +35,7 @@ public:
     
     bool valid()
     {
-        for(int i = 0; i < 256; i++)
+        for(int i = 0; i < 60; i++)
         {
             if(countS[i] < countT[i]) return false;
         }
