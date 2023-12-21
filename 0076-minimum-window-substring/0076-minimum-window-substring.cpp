@@ -3,6 +3,8 @@ public:
     int countS[58];
     int countT[58];
     string minWindow(string s, string t) {
+        if(s.length() < t.length()) return "";
+        
         for(auto& c : t)
         {
             countT[c - 'A']++;
