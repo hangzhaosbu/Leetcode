@@ -1,7 +1,7 @@
 class Solution {
 public:
-    int countS[60];
-    int countT[60];
+    int countS[58];
+    int countT[58];
     string minWindow(string s, string t) {
         for(auto& c : t)
         {
@@ -35,7 +35,7 @@ public:
     
     bool valid()
     {
-        for(int i = 0; i < 60; i++)
+        for(int i = 0; i < 58; i++)
         {
             if(countS[i] < countT[i]) return false;
         }
