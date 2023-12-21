@@ -3,7 +3,6 @@ public:
     int countS[256];
     int countT[256];
     string minWindow(string s, string t) {
-        // if(s.length() < t.length()) return "";
         for(auto& c : t)
         {
             countT[(int) c]++;
@@ -11,7 +10,6 @@ public:
         
         int i = 0, j = 0, N = s.length();
         int ans = INT_MAX, start = 0, end = 0;
-        bool flag = false;
         
         while(i < N)
         {
@@ -26,15 +24,12 @@ public:
                 ans = j - i + 1;
                 start = i;
                 end = j;
-                flag = true;
             }
             
             countS[(int) s[i]]--;
             i++;
         }
-        // cout << start << "," << end << endl;
         
-        if(!flag) return "";
         return s.substr(start, end - start);
     }
     
