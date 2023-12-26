@@ -26,7 +26,7 @@ public:
                 j++;
             }
             
-            if(j - i + 1 < ans && count == 0 && valid())
+            if(j - i + 1 < ans && count == 0)
             {
                 ans = j - i + 1;
                 start = i;
@@ -45,15 +45,5 @@ public:
         }
         
         return s.substr(start, end - start);
-    }
-    
-    bool valid()
-    {
-        for(auto& [key, val] : map)
-        {
-            if(val > 0) return false;
-        }
-        
-        return true;
     }
 };
