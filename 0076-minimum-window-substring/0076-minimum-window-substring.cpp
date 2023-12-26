@@ -1,13 +1,12 @@
 class Solution {
 public:
-    int countS[58];
-    int countT[58];
+    unordered_map<char, int> map;
     string minWindow(string s, string t) {
         if(s.length() < t.length()) return "";
         
         for(auto& c : t)
         {
-            countT[c - 'A']++;
+            map[c]++;
         }
         
         int i = 0, j = 0, N = s.length();
@@ -17,7 +16,7 @@ public:
         {
             while(j < N && !valid())
             {
-                countS[s[j] - 'A']++;
+                if(map.find(s[j]) != map.end()) map[s[j]]--;
                 j++;
             }
             
@@ -28,7 +27,8 @@ public:
                 end = j;
             }
             
-            countS[s[i] - 'A']--;
+            
+            if(map.find(s[i]) != map.end()) map[s[i]]++;
             i++;
         }
         
@@ -37,9 +37,9 @@ public:
     
     bool valid()
     {
-        for(int i = 0; i < 58; i++)
+        for(auto& [key, val] : map)
         {
-            if(countS[i] < countT[i]) return false;
+            if(val > 0) return false;
         }
         
         return true;
