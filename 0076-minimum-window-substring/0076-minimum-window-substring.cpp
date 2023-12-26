@@ -3,10 +3,12 @@ public:
     unordered_map<char, int> map;
     string minWindow(string s, string t) {
         if(s.length() < t.length()) return "";
+        int count = 0;
         
         for(auto& c : t)
         {
             map[c]++;
+            count++;
         }
         
         int i = 0, j = 0, N = s.length();
@@ -14,9 +16,13 @@ public:
         
         while(i < N)
         {
-            while(j < N && !valid())
+            while(j < N && count != 0)
             {
-                if(map.find(s[j]) != map.end()) map[s[j]]--;
+                if(map.find(s[j]) != map.end())
+                {
+                    if(map[s[j]] > 0) count--;
+                    map[s[j]]--;
+                }
                 j++;
             }
             
@@ -28,7 +34,13 @@ public:
             }
             
             
-            if(map.find(s[i]) != map.end()) map[s[i]]++;
+            if(map.find(s[i]) != map.end())
+            {
+                map[s[i]]++;
+                
+                if(map[s[i]] > 0)
+                    count++;
+            }
             i++;
         }
         
