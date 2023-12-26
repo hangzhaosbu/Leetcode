@@ -16,7 +16,7 @@ public:
         
         while(i < N)
         {
-            while(j < N && count != 0)
+            while(j < N && count > 0)
             {
                 if(map.find(s[j]) != map.end())
                 {
@@ -26,7 +26,7 @@ public:
                 j++;
             }
             
-            if(j - i + 1 < ans && valid())
+            if(j - i + 1 < ans && count == 0 && valid())
             {
                 ans = j - i + 1;
                 start = i;
@@ -36,10 +36,10 @@ public:
             
             if(map.find(s[i]) != map.end())
             {
-                map[s[i]]++;
-                
-                if(map[s[i]] > 0)
+                if(map[s[i]] >= 0)
                     count++;
+                
+                map[s[i]]++;
             }
             i++;
         }
