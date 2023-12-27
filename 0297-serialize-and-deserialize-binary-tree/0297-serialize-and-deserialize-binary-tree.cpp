@@ -9,38 +9,25 @@
  */
 class Codec {
 public:
-    vector<string> ans;
+    string ans;
     int k = 0;
     // Encodes a tree to a single string.
     string serialize(TreeNode* root)
     {
         dfs(root);
-        
-        string s;
-        
-        for(int i = 0; i < ans.size(); i++)
-        {
-            if(i != ans.size() - 1)
-            {
-                s += ans[i] + ",";
-            }
-            else
-            {
-                s += ans[i];
-            }
-        }
-        return s;
+        // cout << ans;
+        return ans.substr(0, ans.length() - 1);
     }
     
     void dfs(TreeNode* root)
     {
         if(root == nullptr)
         {
-            ans.push_back("N");
+            ans += "N,";
             return;
         }
         
-        ans.push_back(to_string(root->val));
+        ans += to_string(root->val) + ",";
         dfs(root->left);
         dfs(root->right);
     }
@@ -64,6 +51,7 @@ public:
         curt->right = deserialize(data);
         
         return curt;
+        // return nullptr;
     }
 };
 
