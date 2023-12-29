@@ -1,34 +1,47 @@
 class Solution {
 public:
-    bool P[1010][1010];
     string longestPalindrome(string s) {
-        if(s.size()==0) return "";
-        int i = 0, j = 0;
-        int n = s.size();
-        //initialize P[n][n], we only need half of P, and initialize it like: (e.g. : s="abbc")
+        int n = s.length();
+        vector<vector<int>>dp(n, vector<int>(n, 0));
+        int ans = 0, start = 0, end = 0;
         
-        for(int x = 0;x<n;x++){
-            P[x][x]=true;
-            if(x==n-1) break;
-            P[x][x+1] = (s[x]==s[x+1]);
-        }
-        //dp 
-        for(int i = n-3; i>=0; --i){
-            for(int j = i+2;j<n; ++j){
-                P[i][j] = (P[i+1][j-1] && s[i]==s[j]);     
+        for(int i = 0; i < n; i++)
+        {
+            dp[i][i] = 1;
+            
+            if(i > 0 && s[i] == s[i - 1])
+            {
+                dp[i - 1][i] = 2;
+                start = i - 1;
+                end = i;
             }
         }
-        //get maxstr result
-        int max = 0;
-        string maxstr = "";
-        for(int i=0;i<n;i++){
-            for(int j=i;j<n;j++){
-                if(P[i][j]==true and j-i+1>max){
-                    max = j-i+1;
-                    maxstr = s.substr(i,j-i+1);
+        
+        for(int len = 3; len <= s.length(); len++)
+        {
+            for(int i = 0; i + len - 1 < n; i++)
+            {
+                int j = i + len - 1;
+                
+                if(s[i] == s[j] && dp[i + 1][j - 1] != 0)
+                {
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                }
+                else
+                {
+                    dp[i][j] = 0;
+                }
+                
+                
+                if(dp[i][j] > ans)
+                {
+                    ans = dp[i][j];
+                    start = i;
+                    end = j;
                 }
             }
         }
-        return maxstr;
+        
+        return s.substr(start, end - start + 1);
     }
 };
