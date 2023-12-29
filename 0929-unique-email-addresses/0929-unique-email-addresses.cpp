@@ -10,8 +10,7 @@ public:
             
             for(auto& c : email)
             {
-                if(c == '@') break;
-                if(c == '+') break;
+                if(c == '@' || c == '+') break;
                 if(c != '.') curt += c;
             }
             
