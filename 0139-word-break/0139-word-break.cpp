@@ -27,7 +27,7 @@ public:
             if(set.find(s.substr(idx, i - idx + 1)) != set.end())
                 
             {
-                dp[idx][i] = 1;
+                // dp[idx][i] = 1;
                 if(dfs(i + 1, s, set))
                 {
                     return dp[i + 1][s.length() - 1] = 1;
