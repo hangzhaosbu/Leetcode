@@ -17,8 +17,7 @@ public:
     {
         if(idx == s.length())
         {
-            dp[0][s.length() - 1] = 1;
-            return true;
+            return dp[0][s.length() - 1] = 1;
         }
         
         if(dp[0][idx] != -1) return dp[0][idx];
@@ -31,13 +30,10 @@ public:
                 dp[idx][i] = 1;
                 if(dfs(i + 1, s, set))
                 {
-                    dp[i + 1][s.length() - 1] = 1;
-                    return true;
+                    return dp[i + 1][s.length() - 1] = 1;
                 }
             }
         }
-        
-        dp[0][idx] = 0;
-        return false;
+        return dp[0][idx] = false;
     }
 };
