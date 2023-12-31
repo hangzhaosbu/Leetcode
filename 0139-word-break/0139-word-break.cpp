@@ -5,11 +5,7 @@ public:
     {
         memset(dp, -1, sizeof(dp));
         unordered_set<string> set;
-        for(auto& word : wordDict)
-        {
-            set.insert(word);
-        }
-        
+        for(auto& word : wordDict) set.insert(word);
         return dfs(0, s, set);
     }
     
@@ -24,14 +20,9 @@ public:
         
         for(int i = idx; i < s.length(); i++)
         {
-            if(set.find(s.substr(idx, i - idx + 1)) != set.end())
-                
+            if(set.find(s.substr(idx, i - idx + 1)) != set.end() && dfs(i + 1, s, set))
             {
-                // dp[idx][i] = 1;
-                if(dfs(i + 1, s, set))
-                {
-                    return dp[i + 1][s.length() - 1] = 1;
-                }
+                return dp[i + 1][s.length() - 1] = 1;
             }
         }
         return dp[0][idx] = false;
