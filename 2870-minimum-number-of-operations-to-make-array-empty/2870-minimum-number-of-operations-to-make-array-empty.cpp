@@ -19,24 +19,9 @@ public:
             {
                 ans += value / 3;
             }
-            
-            else if(value % 2 == 0)
-            {
-                int count = value / 3;
-                count--;
-                
-                count += 2;
-                
-                ans += count;
-            }
             else
             {
-                int count = value / 3;
-                count--;
-                
-                count += 2;
-                
-                ans += count;
+                ans += value / 3 + 1;
             }
         }
         
