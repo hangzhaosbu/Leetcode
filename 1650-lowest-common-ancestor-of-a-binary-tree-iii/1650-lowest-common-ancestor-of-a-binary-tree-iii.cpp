@@ -12,21 +12,19 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
-        unordered_set<Node*> set;
+        Node* temp_p = p;
+        Node* temp_q = q;
         
         
-        while(p != nullptr)
+        while(temp_p != temp_q)
         {
-            set.insert(p);
-            p = p->parent;
+            if(!temp_p) temp_p = q;
+            else temp_p = temp_p->parent;
+            
+            if(!temp_q) temp_q = p;
+            else temp_q = temp_q->parent;
         }
         
-        while(q != nullptr)
-        {
-            if(set.find(q) != set.end()) return q;
-            q = q->parent;
-        }
-        
-        return p;
+        return temp_p;
     }
 };
