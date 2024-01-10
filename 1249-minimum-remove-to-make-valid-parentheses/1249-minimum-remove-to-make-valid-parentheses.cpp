@@ -1,48 +1,29 @@
 class Solution {
 public:
-    string minRemoveToMakeValid(string s) {
-        unordered_set<int> set;
-        stack<int> st;
-        
-        for(int i = 0; i < s.length(); i++)
-        {
-            char c = s[i];
-            
-            if(c == '(')
-            {
-                st.push(i);
-            }
-            else if(c == ')')
-            {
-                if(st.empty())
-                {
-                    set.insert(i);
-                }
-                else
-                {
-                    st.pop();
-                }
-            }
-        }
-        
-        while(!st.empty()) 
-        {
-            int top = st.top();
-            st.pop();
-            
-            set.insert(top);
-        }
-        
+    string filter(string s, char open, char close)
+    {
+        int balance = 0;
         string ans = "";
         
-        for(int i = 0; i < s.length(); i++)
+        
+        for(auto& c : s)
         {
-            if(set.find(i) == set.end())
+            if(c == open) balance++;
+            else if(c == close)
             {
-                ans += s[i];
+                if(balance <= 0) continue;
+                balance--;
             }
+            ans += c;
         }
         
         return ans;
+    }
+    string minRemoveToMakeValid(string s) {
+        string result = filter(s, '(', ')');
+        reverse(result.begin(), result.end());
+        result = filter(result, ')', '(');
+        reverse(result.begin(), result.end());
+        return result;
     }
 };
