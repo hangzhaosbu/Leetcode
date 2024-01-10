@@ -4,7 +4,6 @@ public:
     bool validPalindrome(string s) {
         int l = 0, r = s.length() - 1;
         
-        
         while(l < r)
         {
             if(s[l] == s[r])
@@ -19,15 +18,7 @@ public:
             else
             {
                 count--;
-                
-                if(validPalindrome(s.substr(l + 1, r - l)) || validPalindrome(s.substr(l, r - l)))
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return validPalindrome(s.substr(l + 1, r - l)) || validPalindrome(s.substr(l, r - l));
             }
         }
         
