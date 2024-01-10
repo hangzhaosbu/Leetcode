@@ -14,7 +14,7 @@ public:
             maxV = max(maxV, heights[i]);
         }
         
-        reverse(ans.begin(), ans.end());
+        sort(ans.begin(), ans.end());
         
         return ans;
     }
