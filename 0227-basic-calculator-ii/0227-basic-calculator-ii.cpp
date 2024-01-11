@@ -1,9 +1,8 @@
 class Solution {
 public:
     int calculate(string s) {
-        stack<int> st;
         char sign = '+';
-        int currentNum = 0;
+        int currentNum = 0, prevNum = 0;
         int ans = 0;
         
         for(int i = 0; i < s.length(); i++)
@@ -19,19 +18,16 @@ public:
             {
                 if(sign == '+' || sign == '-')
                 {
-                    st.push(sign == '+' ? currentNum : -currentNum);
+                    ans += prevNum;
+                    prevNum = sign == '+' ? currentNum : -currentNum;
                 }
                 else if(sign == '*')
                 {
-                    int top = st.top();
-                    st.pop();
-                    st.push(top * currentNum);
+                    prevNum = prevNum * currentNum;
                 }
                 else
                 {
-                    int top = st.top();
-                    st.pop();
-                    st.push(top / currentNum);
+                    prevNum = prevNum / currentNum;
                 }
                 
                 
@@ -40,13 +36,8 @@ public:
             }
         }
         
-        while(!st.empty())
-        {
-            int top = st.top();
-            st.pop();
-            ans += top;
-        }
-        
+        //3+2*2
+        ans += prevNum;
         return ans;
     }
 };
