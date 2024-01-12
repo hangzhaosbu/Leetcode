@@ -1,6 +1,6 @@
 class MovingAverage {
 public:
-    int data[100010];
+    int data[10010];
     int p = 0;
     double total = 0;
     int size = 0;
