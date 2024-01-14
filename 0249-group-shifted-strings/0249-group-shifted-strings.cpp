@@ -25,8 +25,7 @@ public:
                         newc = (char) (((int) c - diff) % 123);
                     else
                         newc = (char) (((int) c - diff + 26) % 123);
-                    string s(1, newc);
-                    news += s;
+                    news += newc;
                 }
                 
                 map[news].push_back(str);
@@ -36,11 +35,6 @@ public:
         for(auto& [key, value] : map)
         {
             ans.push_back(value);
-//             cout << key << " ";
-            
-//             for(auto v : value)
-//                 cout<< v << " ";
-//             cout<<endl;
         }
         
         return ans;
