@@ -6,8 +6,7 @@ public:
         
         for(auto& c : s)
         {
-            if(c == '(') balance++;
-            else balance--;
+            balance += c == '(' ? 1: -1;
             
             if(balance == -1)
             {
