@@ -21,10 +21,10 @@ public:
                 {
                     char c = str[i];
                     char newc;
-                    if((int) c - diff >= 97)
-                        newc = (char) (((int) c - diff) % 123);
+                    if((int) c - diff > 96)
+                        newc = char ((int) c - diff % 123);
                     else
-                        newc = (char) (((int) c - diff + 26) % 123);
+                        newc = char ((int) c - diff + 26 % 123);
                     news += newc;
                 }
                 
