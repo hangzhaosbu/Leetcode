@@ -3,11 +3,6 @@ public:
     
     int memo[40001];
     
-    pair<int,int> oneToTwo(int x, int m, int n)
-    {
-        return {x / n, x % m};
-    }
-    
     int twoToOne(pair<int,int> p, int m, int n)
     {
         return p.first * n + p.second;
