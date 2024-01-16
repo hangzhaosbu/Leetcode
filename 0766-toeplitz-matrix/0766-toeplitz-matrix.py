@@ -1,17 +1,33 @@
 class Solution:
     def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
+        m = len(matrix)
+        n = len(matrix[0])
         
-        for row in range(len(matrix)):
+        #check row
+        for col in range(n):
+            curt = matrix[0][col]
             
-            count = 1
-            curt = []
-            for col in range(len(matrix[0])):
-                curt.append(matrix[row][col])
+            l = 1
             
+            while l < m and col + l < n:
+                temp = matrix[l][col + l]
+                
+                if temp != curt:
+                    return False
+                
+                l+=1
+                
+        #check column
+        for row in range(1, m):
+            curt = matrix[row][0]
             
-            for i in range(row + 1, len(matrix)):
-                for j in range(count, len(matrix[0])):
-                    if curt[j - count] != matrix[i][j]:
-                        return False
-                count+=1
+            l = 1
+            
+            while l < n and l + row < m:
+                temp = matrix[row + l][l]
+                
+                if temp != curt:
+                    return False
+                
+                l += 1
         return True
