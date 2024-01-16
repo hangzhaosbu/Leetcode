@@ -7,11 +7,11 @@
 class Solution:
     
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
-        self.total = 0
+        total = 0
         
         
         def dfs(root, low, high):
-            
+            nonlocal total
             if not root:
                 return
             
@@ -21,12 +21,12 @@ class Solution:
             elif root.val > high:
                 dfs(root.left, low, high)
             else:
-                self.total += root.val
+                total += root.val
                 
                 dfs(root.right, low, high)
                 dfs(root.left, low, high)
         
         
         dfs(root, low, high)
-        return self.total
+        return total
             
