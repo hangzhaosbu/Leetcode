@@ -5,10 +5,6 @@ class Solution:
         ans = float("inf")
         buildingCount = 0
         
-        [0,2,1]
-        [1,0,2]
-        [0,1,0]
-        
         q = []
         steps = [[0 for _ in range(n)] for _ in range(m)]
         reachCount = [[0 for _ in range(n)] for _ in range(m)]
