@@ -6,13 +6,6 @@
 #         self.right = right
 class Solution:
     def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
-        """
-        3
-      1   4
-     0 2 2
-        
-        
-        """
         memo = dict()
         ans = []
         q = [(root, 0, 0)]
