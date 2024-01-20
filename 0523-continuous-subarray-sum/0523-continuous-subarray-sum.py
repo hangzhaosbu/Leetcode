@@ -3,15 +3,10 @@ class Solution:
         hashmap = {}
         hashmap[0] = -1
         
-        prefixSum = []
-        total = 0
+        for i in range(1, len(nums)):
+            nums[i] += nums[i - 1]
         
-        for num in nums:
-            total += num
-            
-            prefixSum.append(total)
-        
-        for i, num in enumerate(prefixSum):
+        for i, num in enumerate(nums):
             
             curt = num % k
             
