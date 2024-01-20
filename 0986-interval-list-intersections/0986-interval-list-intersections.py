@@ -12,13 +12,9 @@ class Solution:
             else:
                 if interval[0] <= stack[-1][1]:
                     ans.append([max(interval[0], stack[-1][0]), min(stack[-1][1], interval[1])])
-                    
-                    newInterval = [stack[-1][0], max(interval[1], stack[-1][1])]
-                    stack.pop()
-                    stack.append(newInterval)
-                else:
-                    stack.pop()
-                    stack.append(interval)
+                    interval = [stack[-1][0], max(interval[1], stack[-1][1])]
+                stack.pop()
+                stack.append(interval)
         
         return ans
         
