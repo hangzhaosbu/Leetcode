@@ -26,7 +26,7 @@ class Solution:
                 node.next = nxt
                 break
                 
-            elif curt.val > curt.next.val and (curt.next.val >= insertVal or insertVal > curt.val):
+            elif curt.val > curt.next.val and (curt.next.val >= insertVal or insertVal >= curt.val):
                 node = Node(insertVal)
                 nxt = curt.next
                 
