@@ -1,7 +1,8 @@
 class Solution:
     def calculate(self, s: str) -> int:
-        stack = []
+        prev = 0
         curtNum = 0
+        ans = 0
         sign = '+'
         #"2*3+2*2"
         for i, c in enumerate(s):
@@ -12,29 +13,20 @@ class Solution:
             if c in "+-*/" or i == len(s) - 1:
                 
                 if sign == "+":
-                    stack.append(curtNum)
+                    ans += prev
+                    prev = curtNum
                 elif sign == "-":
-                    stack.append(-curtNum)
+                    ans += prev
+                    prev = -curtNum
                 elif sign == "*":
-                    prev = stack[-1] * curtNum
-                    stack.pop()
-                    
-                    stack.append(prev)
+                    prev = prev * curtNum
                 elif sign == "/":
-                    prev = int(stack[-1] / curtNum)
-                    stack.pop()
-                    
-                    stack.append(prev)
+                    prev = int(prev / curtNum)
                     
                 sign = c
                 curtNum = 0
         
-        ans = 0
-        
-        while stack:
-            ans += stack[-1]
-            stack.pop()
-        
+        ans += prev
         return ans
                     
                     
