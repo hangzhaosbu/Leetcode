@@ -4,20 +4,20 @@ class Solution:
         
         def helper(s, open, close):
             balance = 0
-            ans = []
+            ans = ""
 
             for c in s:
                 if c == open:
                     balance+=1
                 elif c == close:
                     balance-=1
-                ans.append(c)
                 if balance == -1:
                     balance = 0
-                    ans.pop()
+                else:
+                    ans += c
         
         
-            return "".join(ans)
+            return ans
         
         s = helper(s, "(", ")")
         s = s[::-1]
