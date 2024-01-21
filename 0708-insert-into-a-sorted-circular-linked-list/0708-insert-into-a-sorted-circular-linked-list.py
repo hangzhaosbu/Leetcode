@@ -12,42 +12,39 @@ class Solution:
             node = Node(insertVal)
             node.next = node
             return node
-        
-        elif head.next == head:
-            node = Node(insertVal)
-            head.next = node
-            node.next = head
             
-            return head
-        
-        stored = head
+            
         curt = head
-        valid = False
         
         while curt:
-            if curt.val <= insertVal and curt.next.val >= insertVal:
-                nxt = curt.next
-                node = Node(insertVal)
-                curt.next = node
-                node.next = nxt
-                valid = True
-            elif curt.val > curt.next.val and (insertVal <= curt.next.val or insertVal >= curt.val) :
-                nxt = curt.next
-                node = Node(insertVal)
-                curt.next = node
-                node.next = nxt
-                valid = True
-            else:
-                curt = curt.next
             
-                
-            if curt.next == stored and valid == False:
-                nxt = curt.next
+            if curt.val <= insertVal and curt.next.val >= insertVal:
                 node = Node(insertVal)
+                nxt = curt.next
+                
                 curt.next = node
                 node.next = nxt
-                valid = True
-            if valid: break
+                break
                 
-        return head
+            elif curt.val > curt.next.val and (curt.next.val >= insertVal or insertVal > curt.val):
+                node = Node(insertVal)
+                nxt = curt.next
+                
+                curt.next = node
+                node.next = nxt
+                break
+            
+            elif curt.next == head:
+                node = Node(insertVal)
+                nxt = curt.next
+                
+                curt.next = node
+                node.next = nxt
+                break
+            
+            curt = curt.next
         
+        return head
+            
+            
+            
