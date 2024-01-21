@@ -15,8 +15,6 @@ class Solution:
                     balance = 0
                 else:
                     ans += c
-        
-        
             return ans
         
         s = helper(s, "(", ")")
