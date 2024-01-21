@@ -12,35 +12,30 @@ class Solution:
             node = Node(insertVal)
             node.next = node
             return node
+        
+        
+        def insert(node, insertVal):
+            nxt = node.next
+            newNode = Node(insertVal)
             
+            node.next = newNode
+            newNode.next = nxt
             
         curt = head
         
         while curt:
             
             if curt.val <= insertVal and curt.next.val >= insertVal:
-                node = Node(insertVal)
-                nxt = curt.next
-                
-                curt.next = node
-                node.next = nxt
-                break
+                insert(curt, insertVal)
+                return head
                 
             elif curt.val > curt.next.val and (curt.next.val >= insertVal or insertVal >= curt.val):
-                node = Node(insertVal)
-                nxt = curt.next
-                
-                curt.next = node
-                node.next = nxt
-                break
+                insert(curt, insertVal)
+                return head
             
             elif curt.next == head:
-                node = Node(insertVal)
-                nxt = curt.next
-                
-                curt.next = node
-                node.next = nxt
-                break
+                insert(curt, insertVal)
+                return head
             
             curt = curt.next
         
