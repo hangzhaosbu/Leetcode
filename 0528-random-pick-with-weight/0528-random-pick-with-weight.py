@@ -10,7 +10,7 @@ class Solution:
         # print((self.prefix))
 
     def pickIndex(self) -> int:
-        r = random.randint(1, self.prefix[-1])
+        r = random.random() * self.prefix[-1]
         
         for i, num in enumerate(self.prefix):
             if r <= num:
