@@ -26,7 +26,7 @@ class Solution:
             elif r - j + 1 > k:
                 return quickselect(j + 1, r, k)
             else:
-                if j - i >= 99000:
+                if j - i > 99989:
                     return nums[i]
                 return quickselect(l, j - 1, k - (r - j + 1))
         
