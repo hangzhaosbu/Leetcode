@@ -1,37 +1,34 @@
 class Solution:
     def calculate(self, s: str) -> int:
-        prev = 0
+        stack = []
+        
         curtNum = 0
-        ans = 0
-        sign = '+'
-        #"2*3+2*2"
+        sign = "+"
+        
         for i, c in enumerate(s):
+            if c >= '0' and c <= '9':
+                curtNum = curtNum * 10 + ord(c) - ord('0')
             
-            if ord(c) >= ord('0') and ord(c) <= ord('9'):
-                curtNum = curtNum * 10 + (ord(c) - ord('0'))
             
             if c in "+-*/" or i == len(s) - 1:
                 
                 if sign == "+":
-                    ans += prev
-                    prev = curtNum
+                    stack.append(curtNum)
                 elif sign == "-":
-                    ans += prev
-                    prev = -curtNum
-                elif sign == "*":
-                    prev = prev * curtNum
-                elif sign == "/":
-                    prev = int(prev / curtNum)
+                    stack.append(-curtNum)
                     
+                elif sign == "*":
+                    stack[-1] = stack[-1] * curtNum
+                else:
+                    stack[-1] = int(stack[-1] / curtNum)
+                
                 sign = c
                 curtNum = 0
+                
+        ans = 0
         
-        ans += prev
+        while stack:
+            ans += stack[-1]
+            stack.pop()
+        
         return ans
-                    
-                    
-                    
-            
-            
-            
-            
