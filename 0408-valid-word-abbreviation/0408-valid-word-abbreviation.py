@@ -1,25 +1,28 @@
 class Solution:
     def validWordAbbreviation(self, word: str, abbr: str) -> bool:
-        
-        i, j = 0, 0
         m, n = len(word), len(abbr)
         
+        i, j = 0, 0
         
         while i < m and j < n:
-            if word[i] == abbr[j]:
-                i+=1
-                j+=1
-            else:
+            if abbr[j] >= '0' and abbr[j] <= '9':
                 
-                if abbr[j] >= '1' and abbr[j] <= '9':
+                if abbr[j] == '0':
+                    return False
                 
-                    num = 0
+                else:
+                    curt = 0
                     while j < n and abbr[j] >= '0' and abbr[j] <= '9':
-                        num = 10 * num + ord(abbr[j]) - ord('0')
-                        j+=1
-
-                    i+=num
+                        curt = curt * 10 + ord(abbr[j]) - ord('0')
+                        j += 1
+                    
+                    i += curt
+            else:
+                if word[i] == abbr[j]:
+                    i += 1
+                    j += 1
                 else:
                     return False
         
         return i == m and j == n
+                
