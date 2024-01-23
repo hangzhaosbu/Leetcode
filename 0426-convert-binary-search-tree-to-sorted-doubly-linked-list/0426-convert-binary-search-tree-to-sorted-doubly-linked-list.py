@@ -12,29 +12,29 @@ class Solution:
         if not root:
             return root
         
-        first, last = None, None
+        first = None
+        last = None
         
         def dfs(node):
             nonlocal first, last
-            
-            if node == None:
+            if not node:
                 return
+            
             
             dfs(node.left)
             
             if last == None:
                 first = node
-                
-            if last != None:
+            else:
                 last.right = node
                 node.left = last
-                
-                
+            
             last = node
             
             dfs(node.right)
-        
+            
         dfs(root)
+        
         first.left = last
         last.right = first
         
