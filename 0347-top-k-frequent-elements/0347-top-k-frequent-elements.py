@@ -1,6 +1,8 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         hashmap = {}
+        pq = []
+        ans = []
         
         for num in nums:
             hashmap[num] = hashmap.get(num, 0) + 1
@@ -8,10 +10,13 @@ class Solution:
         candidates = []
         
         for key, val in hashmap.items():
-            candidates.append([key, val])
+            heapq.heappush(pq, [val, key])
+            
+            if len(pq) > k:
+                heapq.heappop(pq)
         
-        candidates.sort(key=lambda x : -x[1])
+        while pq:
+            ans.append(pq[0][1])
+            heapq.heappop(pq)
         
-        # print(candidates)
-        
-        return [x[0] for x in candidates[:k]]
+        return ans
