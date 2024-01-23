@@ -21,16 +21,15 @@ class Solution:
                 else:
                     temp += c
             
-            if not temp:
-                return res
-            
-            used = float("inf")
-            for i, sticker in enumerate(stickers):
-                if temp[0] in sticker:
-                    used = min(used, recur(temp, hashmap[i].copy()))
-            
-            dp[temp] = used
-            return res + dp[temp]
+            if temp:
+                used = float("inf")
+                for i, sticker in enumerate(stickers):
+                    if temp[0] in sticker:
+                        used = min(used, recur(temp, hashmap[i].copy()))
+
+                dp[temp] = used
+                res += used
+            return res
         
         
         res = recur(target, {})
