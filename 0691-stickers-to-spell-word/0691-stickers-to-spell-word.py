@@ -1,42 +1,39 @@
 class Solution:
     def minStickers(self, stickers: List[str], target: str) -> int:
-        stickerCount = []
+        hashmap = [{} for _ in range(len(stickers))]
         
-        for i,s in enumerate(stickers):
-            stickerCount.append({})
-            
-            for c in s:
-                stickerCount[i][c] = stickerCount[i].get(c, 0) + 1
+        for i in range(len(stickers)):
+            for c in stickers[i]:
+                hashmap[i][c] = hashmap[i].get(c, 0) + 1
         
-        dp = {} # for each subsequence, the minimum number of stickers that I need to use to spell out that subsequence
+        dp = {"":0}
         
-        def dfs(t, s):
-            if t in dp:
-                return dp[t]
+        def recur(target, dic):
+            if target in dp:
+                return dp[target]
             
-            remain = ""
-            res = 1 if s else 0
+            res = 1 if dic else 0
+            temp = ""
             
-            for c in t:
-                if c in s and s[c] > 0:
-                    s[c] -= 1
+            for c in target:
+                if c in dic and dic[c] > 0:
+                    dic[c] -= 1
                 else:
-                    remain += c
+                    temp += c
             
+            if not temp:
+                return res
             
-            if remain:
-                
-                used = float("inf")
-                
-                for sticker in stickerCount:
-                    if remain[0] in sticker:
-                        used = min(used, dfs(remain, sticker.copy()))
+            used = float("inf")
+            for i, sticker in enumerate(stickers):
+                if temp[0] in sticker:
+                    used = min(used, recur(temp, hashmap[i].copy()))
             
-                dp[remain] = used
-                res += used
-            return res
+            dp[temp] = used
+            return res + dp[temp]
         
-        res = dfs(target, {})
+        
+        res = recur(target, {})
         
         return res if res != float("inf") else -1
-                    
+                        
