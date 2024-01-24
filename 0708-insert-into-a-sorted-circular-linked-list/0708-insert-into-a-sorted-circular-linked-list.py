@@ -13,6 +13,12 @@ class Solution:
             node.next = node
             
             return node
+        
+        elif head.next == head:
+            node = Node(insertVal)
+            head.next = node
+            node.next = head
+            return head
         else:
             
             curt = head
