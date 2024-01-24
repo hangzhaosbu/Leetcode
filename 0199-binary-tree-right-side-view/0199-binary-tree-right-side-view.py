@@ -8,15 +8,16 @@ class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         ans = []
         
-        def dfs(root, depth):
-            if not root:
+        
+        def dfs(node, depth):
+            if not node:
                 return
             
             if depth > len(ans):
-                ans.append(root.val)
+                ans.append(node.val)
             
-            dfs(root.right, depth + 1)
-            dfs(root.left, depth + 1)
+            dfs(node.right, depth + 1)
+            dfs(node.left, depth + 1)
         
         dfs(root, 1)
         
