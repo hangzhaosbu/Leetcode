@@ -11,7 +11,7 @@ class Solution:
                 else:
                     r += 1
         
-        ans = set()
+        ans = []
         
         
         def valid(s):
@@ -29,28 +29,27 @@ class Solution:
             return balance == 0
         
         def dfs(start, s, l, r):
-            if start == len(s):
+            if l == 0 and r == 0:
                 if valid(s):
-                    ans.add(s[:])
+                    ans.append(s[:])
                 return
             
             for i in range(start, len(s)):
                 if i != start and s[i] == s[i - 1]:
                     continue
                 
-                newS = s[:i] + s[i + 1:]
-                
-                if s[i] == '(' and l > 0:
-                    dfs(i, newS, l - 1, r)
-                elif s[i] == ')' and r > 0:
-                    dfs(i, newS, l, r - 1)
-                else:
-                    dfs(i + 1, s, l, r)
+                if s[i] == '(' or s[i] == ')':
+                    newS = s[:i] + s[i + 1:]
+
+                    if s[i] == '(' and l > 0:
+                        dfs(i, newS, l - 1, r)
+                    elif s[i] == ')' and r > 0:
+                        dfs(i, newS, l, r - 1)
         
         
         dfs(0, s, l, r)
         
-        return list(ans)
+        return ans
             
             
             
