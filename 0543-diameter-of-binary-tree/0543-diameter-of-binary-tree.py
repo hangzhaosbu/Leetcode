@@ -18,10 +18,10 @@ class Solution:
             l = dfs(node.left)
             r = dfs(node.right)
             
-            ans = max(ans, l + r + 1)
+            ans = max(ans, l + r)
             
             return max(l, r) + 1
         
         dfs(root)
         
-        return ans - 1
+        return ans
