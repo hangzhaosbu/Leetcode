@@ -1,32 +1,22 @@
 class Solution:
     def maximumSwap(self, num: int) -> int:
-        digits = []
+        num = list(map(int, str(num)))
+        last = [0 for _ in range(10)]
         
-        def getD(num):
+        
+        for i in range(len(num)):
+            last[num[i]] = i
+        
+        for i in range(len(num)):
+            for d in range(9, -1, -1):
+                if d > num[i] and last[d] > i:
+                    num[i], num[last[d]] = num[last[d]], num[i]
+        
+                    return int("".join(map(str, num)))
+        
+        return int("".join(map(str, num)))
             
-            
-            while num > 0:
-                digits.append(num % 10)
-                num = num // 10
         
-        getD(num)
         
-        digits = digits[::-1]
         
-        for i in range(len(digits)):
-            maxIndex = i
-            
-            for j in range(i + 1, len(digits)):
-                if digits[j] >= digits[maxIndex]:
-                    maxIndex = j
-                    
-            if maxIndex != i and digits[maxIndex] != digits[i]:
-                digits[i], digits[maxIndex] = digits[maxIndex], digits[i]
-                break
         
-        ans = 0
-        
-        for digit in digits:
-            ans = ans * 10 + digit
-            
-        return ans
