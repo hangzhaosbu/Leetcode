@@ -19,7 +19,6 @@ class Solution:
                     if ord(c) - diff >= 97:
                         curt += chr(ord(c) - diff)
                     else:
-                        
                         curt += chr(ord(c) - diff + 26)
                 
                 if curt not in hashmap:
