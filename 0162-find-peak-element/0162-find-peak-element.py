@@ -7,10 +7,7 @@ class Solution:
             
             if nums[mid] < nums[mid + 1]:
                 l = mid + 1
-                
             else:
                 r = mid
-                
-        
         
         return l
