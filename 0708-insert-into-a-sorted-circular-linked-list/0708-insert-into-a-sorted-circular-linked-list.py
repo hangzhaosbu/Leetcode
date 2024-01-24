@@ -11,35 +11,32 @@ class Solution:
         if not head:
             node = Node(insertVal)
             node.next = node
+            
             return node
-        
-        
-        def insert(node, insertVal):
-            nxt = node.next
-            newNode = Node(insertVal)
+        else:
             
-            node.next = newNode
-            newNode.next = nxt
+            curt = head
             
-        curt = head
-        
-        while curt:
-            
-            if curt.val <= insertVal and curt.next.val >= insertVal:
-                insert(curt, insertVal)
-                return head
+            while curt:
+                if curt.val <= insertVal and curt.next.val >= insertVal:
+                    node = Node(insertVal)
+                    nxt = curt.next
+                    curt.next = node
+                    node.next = nxt
+                    break
+                elif curt.val > curt.next.val and (insertVal >= curt.val or insertVal <= curt.next.val):
+                    node = Node(insertVal)
+                    nxt = curt.next
+                    curt.next = node
+                    node.next = nxt
+                    break
+                elif curt.next == head:
+                    node = Node(insertVal)
+                    nxt = curt.next
+                    curt.next = node
+                    node.next = nxt
+                    break
                 
-            elif curt.val > curt.next.val and (curt.next.val >= insertVal or insertVal >= curt.val):
-                insert(curt, insertVal)
-                return head
+                curt = curt.next
             
-            elif curt.next == head:
-                insert(curt, insertVal)
-                return head
-            
-            curt = curt.next
-        
-        return head
-            
-            
-            
+            return head
