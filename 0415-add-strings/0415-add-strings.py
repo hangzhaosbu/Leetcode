@@ -8,14 +8,14 @@ class Solution:
         
         while p1 >= 0 or p2 >= 0:
             if p1 >= 0:
-                carry += ord(num1[p1]) - ord('0')
+                carry += ord(num1[p1]) % 48
             
             if p2 >= 0:
-                carry += ord(num2[p2]) - ord('0')
+                carry += ord(num2[p2]) % 48
                 
             ans = str(carry % 10) + ans
             
-            carry = carry//10
+            carry //= 10
             
             p2 -= 1
             p1 -= 1
