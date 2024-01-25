@@ -3,35 +3,35 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        
         i = len(nums) - 1
         
-        while i - 1 >= 0 and nums[i - 1] >= nums[i]:
-            i-=1
-            
-        if i == 0:
+        while i > 0 and nums[i] <= nums[i - 1]:
+            i -= 1
+        
+        i -= 1
+        
+        if i < 0:
             
             l, r = 0, len(nums) - 1
             
             while l < r:
                 nums[l], nums[r] = nums[r], nums[l]
-                l+=1
-                r-=1
+                l += 1
+                r -= 1
+            
+            return
+        
         else:
-            i -= 1
-            target = nums[i]
             
             j = i + 1
             diff = float("inf")
             k = 0
             
             while j < len(nums):
-                
-                if nums[j] > target and nums[j] - target <= diff:
-                    diff = nums[j] - target
+                if nums[j] > nums[i] and nums[j] - nums[i] <= diff:
+                    diff = nums[j] - nums[i]
                     k = j
                 j += 1
-            
             
             nums[i], nums[k] = nums[k], nums[i]
             
@@ -41,3 +41,8 @@ class Solution:
                 nums[l], nums[r] = nums[r], nums[l]
                 l += 1
                 r -= 1
+            
+                
+            
+            
+                
