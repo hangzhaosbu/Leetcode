@@ -6,16 +6,12 @@ class Solution:
         for i, num in enumerate(nums):
             if num not in self.hashmap:
                 self.hashmap[num] = []
-            
             self.hashmap[num].append(i)
-            
-        
 
     def pick(self, target: int) -> int:
-        length = len(self.hashmap[target])
-        r = random.randint(0, length - 1)
-        
-        return self.hashmap[target][r]
+        l = self.hashmap[target]
+        r = int(random.random() * len(l))
+        return l[r]
 
 
 # Your Solution object will be instantiated and called as such:
