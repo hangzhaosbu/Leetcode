@@ -6,33 +6,39 @@
 #         self.right = right
 class Solution:
     def verticalTraversal(self, root: Optional[TreeNode]) -> List[List[int]]:
-        memo = dict()
+        hashmap = {}
         ans = []
-        q = [(root, 0, 0)]
         
-        while q:
-            node, row, col = q.pop(0)
-            
-            if col not in memo:
-                memo[col] = {}
-            
-            if row not in memo[col]:
-                memo[col][row] = []
-            
-            memo[col][row].append(node.val)
-            
-            if node.left:
-                q.append((node.left, row + 1, col - 1))
-            
-            if node.right:
-                q.append((node.right, row + 1, col + 1))
+        queue = [(root, 0, 0)]
         
+        while queue:
+            size = len(queue)
+            
+            for _ in range(size):
+                node, row, col = queue.pop(0)
+                
+                if col not in hashmap:
+                    hashmap[col] = {}
+                
+                if row not in hashmap[col]:
+                    hashmap[col][row] = []
+                
+                hashmap[col][row].append(node.val)
+                
+                
+                if node.left:
+                    queue.append((node.left, row + 1, col - 1))
+                
+                if node.right:
+                    queue.append((node.right, row + 1, col + 1))
         
-        for col in sorted(memo.keys()):
+        for key in sorted(hashmap.keys()):
             curt = []
-            for row in memo[col]:
-                curt.extend(sorted(memo[col][row]))
+            for val in sorted(hashmap[key].keys()):
+                curt.extend(sorted(hashmap[key][val]))
+            
             ans.append(curt)
         
         return ans
+            
         
