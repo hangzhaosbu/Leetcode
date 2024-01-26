@@ -1,21 +1,12 @@
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
-        hashmap = {}
-        hashmap[0] = -1
-        
-        for i in range(1, len(nums)):
-            nums[i] += nums[i - 1]
+        hashmap = {0:-1}
+        total = 0
         
         for i, num in enumerate(nums):
-            
-            curt = num % k
-            
-            if curt in hashmap and abs(i - hashmap[curt]) > 1:
+            total += num
+            if total % k in hashmap and i - hashmap[total % k] >= 2:
                 return True
-            
-            if curt not in hashmap:
-                hashmap[curt] = i
-        
+            if total % k not in hashmap:
+                hashmap[total % k] = i
         return False
-        
-        
