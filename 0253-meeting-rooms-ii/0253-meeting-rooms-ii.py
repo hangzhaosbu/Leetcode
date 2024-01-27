@@ -19,7 +19,7 @@ class Solution:
         for start in starts:
             count += 1
             
-            while start >= ends[p1]:
+            if start >= ends[p1]:
                 count -= 1
                 p1 += 1
             
