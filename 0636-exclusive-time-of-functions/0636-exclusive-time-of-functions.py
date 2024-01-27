@@ -1,24 +1,30 @@
 class Solution:
     def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
-        lastEnd = 0
         res = [0 for _ in range(n)]
         stack = []
+        endTime = 0
         
         for log in logs:
             log = log.split(":")
-            id = int(log[0])
-            info = log[1]
+            ID = int(log[0])
+            status = log[1]
             time = int(log[2])
             
-            if info == "start":
+            if status == "start":
+                if not stack:
+                    stack.append([ID, time, 0])
+                else:
+                    stack[-1] = [stack[-1][0], time, stack[-1][2] + time - lastTime]
+                    stack.append([ID, time, 0])
                 
-                if stack:
-                    res[stack[-1]] += time - lastEnd
-                stack.append(id)
-                lastEnd = time
+                lastTime = time
+                
             else:
-                res[stack[-1]] += time - lastEnd + 1
-                lastEnd = time + 1
+                prevID, startTime, Duration = stack[-1][0], stack[-1][1], stack[-1][2]
                 stack.pop()
+                
+                res[ID] += time - lastTime + 1 + Duration
+                lastTime = time + 1
         
         return res
+                
