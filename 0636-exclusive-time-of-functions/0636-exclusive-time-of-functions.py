@@ -12,18 +12,18 @@ class Solution:
             
             if status == "start":
                 if not stack:
-                    stack.append([ID, time, 0])
+                    stack.append(0)
                 else:
-                    stack[-1] = [stack[-1][0], time, stack[-1][2] + time - lastTime]
-                    stack.append([ID, time, 0])
+                    stack[-1] = stack[-1] + time - lastTime
+                    stack.append(0)
                 
                 lastTime = time
                 
             else:
-                prevID, startTime, Duration = stack[-1][0], stack[-1][1], stack[-1][2]
+                duration = stack[-1]
                 stack.pop()
                 
-                res[ID] += time - lastTime + 1 + Duration
+                res[ID] += time - lastTime + 1 + duration
                 lastTime = time + 1
         
         return res
