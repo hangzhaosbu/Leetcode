@@ -11,18 +11,13 @@ class Solution:
             time = int(log[2])
             
             if status == "start":
-                if not stack:
-                    stack.append(0)
-                else:
+                if stack:
                     stack[-1] = stack[-1] + time - lastTime
-                    stack.append(0)
-                
+                stack.append(0)
                 lastTime = time
                 
             else:
-                duration = stack[-1]
-                stack.pop()
-                
+                duration = stack.pop()
                 res[ID] += time - lastTime + 1 + duration
                 lastTime = time + 1
         
