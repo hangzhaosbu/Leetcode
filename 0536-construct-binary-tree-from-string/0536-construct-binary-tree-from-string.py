@@ -6,35 +6,37 @@
 #         self.right = right
 class Solution:
     def str2tree(self, s: str) -> Optional[TreeNode]:
-        if len(s) == 0 or s == "":
+        if not s:
             return None
-        
         i = 0
+        n = len(s)
         
-        while i < len(s) and s[i] != '(':
-            i+=1
+        while i < n and s[i] != '(':
+            i += 1
         
-        if i == len(s):
+        if i == n:
             return TreeNode(int(s))
         
-        root = TreeNode(int(s[:i]))
+        node = TreeNode(int(s[:i]))
         
+        j = i
         balance = 0
-        start = i + 1
+        start = i
         
-        for j in range(i, len(s)):
-            
+        while j < n:
             if s[j] == '(':
-                balance+=1
+                balance += 1
             elif s[j] == ')':
-                balance-=1
-                
+                balance -= 1
             
-            if balance == 0 and start == i + 1:
-                root.left = self.str2tree(s[start:j])
+            
+            if balance == 0 and start == i:
+                node.left = self.str2tree(s[start + 1:j])
                 start = j + 1
+                
             elif balance == 0:
-                root.right = self.str2tree(s[start+1:j])
+                node.right = self.str2tree(s[start + 1:j])
+            j += 1
+        return node
+            
         
-        
-        return root
