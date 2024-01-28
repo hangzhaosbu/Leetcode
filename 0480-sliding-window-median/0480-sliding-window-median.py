@@ -8,10 +8,10 @@ class Solution:
         for i in range(len(nums)):
             l.add(nums[i])
             
-            if i - k >= 0:
+            if i - k > -1:
                 l.remove(nums[i - k])
                 
-            if i >= k - 1:
+            if i > k - 2:
                 if k % 2 == 0:
                     ans.append((l[k//2 - 1] + l[k//2])/2)
                 else:
