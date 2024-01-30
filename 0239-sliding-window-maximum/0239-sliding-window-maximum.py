@@ -1,10 +1,10 @@
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        queue = []
+        queue = Deque()
         ans = []
         for i in range(len(nums)):
             if i - k >= 0 and queue[0] == nums[i - k]:
-                queue.pop(0)
+                queue.popleft()
             
             if not queue:
                 queue.append(nums[i])
