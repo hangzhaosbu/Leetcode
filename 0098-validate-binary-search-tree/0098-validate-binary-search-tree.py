@@ -13,5 +13,5 @@ class Solution:
                 return True
             return root.val > left and root.val < right and valid(root.left, left, root.val) and valid(root.right, root.val, right)
         
-        return valid(root, float('-inf'), float('inf'))
+        return valid(root, -math.inf, math.inf)
         
