@@ -16,6 +16,7 @@ class Solution:
             ret[0] += 1
             if ret[0] == k:
                 ret[1] = node.val
+                return
             
             dfs(node.right)
             
