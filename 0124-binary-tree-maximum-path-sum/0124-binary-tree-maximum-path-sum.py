@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
-        self.ret = -2000
+        ret = [-1000]
         
         def dfs(root):
             if not root:
@@ -24,7 +24,7 @@ class Solution:
             if right > 0:
                 curt += right
                 
-            self.ret = max(self.ret, root.val, root.val + left, root.val + right, curt)
+            ret[0] = max(ret[0], root.val, root.val + left, root.val + right, curt)
             return max(root.val, root.val + left, root.val + right)
         dfs(root)
-        return self.ret
+        return ret[0]
