@@ -1,16 +1,15 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         hashset = set(nums)
-        ans = 0
-        
+        ret = 0
         for num in nums:
-            if num - 1 not in hashset:
-                count = 0
-                
-                while num in hashset:
-                    count += 1
-                    num += 1
-                
-                ans = max(ans, count)
+            if num - 1 in hashset:
+                continue
+            count = 1
+            while num + 1 in hashset:
+                count += 1
+                num += 1
+            
+            ret = max(ret, count)
         
-        return ans
+        return ret
